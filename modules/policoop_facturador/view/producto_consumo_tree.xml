@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tree string="ProductoConsumo">
+    <field name="producto_id"/>
+    <field name="concepto"/>
+    <field name="cantidad_fija"/>
+    <field name="cantidad"/>
+    <field name="tarifa_id"/>
+    <field name="servicio"/>
+</tree>

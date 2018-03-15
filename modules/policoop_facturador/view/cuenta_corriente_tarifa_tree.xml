@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<tree string="Cuenta Corriente Tarifa">
+    <field name="suministro"/>
+    <field name="periodo_facturado"/>
+    <field name="remanente"/>
+</tree>

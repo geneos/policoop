@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tryton>
+    <data>
+        <!-- Forms y trees -->
+        <record model="ir.ui.view" id="registro_venta_view_form">
+            <field name="model">sigcoop_wizard_ventas.registro_venta</field>
+            <field name="type">form</field>
+            <field name="name">registro_venta_form</field>
+        </record>
+        <record model="ir.ui.view" id="registro_venta_view_tree">
+            <field name="model">sigcoop_wizard_ventas.registro_venta</field>
+            <field name="type">tree</field>
+            <field name="name">registro_venta_tree</field>
+        </record>
+
+        <!-- act_window -->
+        <record id="act_registro_venta_form" model="ir.action.act_window">
+            <field name="name">Registro Venta</field>
+            <field name="res_model">sigcoop_wizard_ventas.registro_venta</field>
+            <field name="search_value"/>
+        </record>
+
+        <menuitem name="Registro de Ventas" parent="sigcoop_menus.menu_configuration_prod"
+             id="menu_reg_venta"
+             sequence="0" icon="tryton-list"
+             action="act_registro_venta_form"/>
+        <!-- Menus -->
+        <!--<menuitem parent="product.menu_main_product" sequence="0" action="act_registro_venta_form" icon="tryton-list" id="menu_registro_venta_form"/>-->
+
+
+        <record model="ir.ui.view" id="registro_facturacion_view_form">
+            <field name="model">sigcoop_wizard_ventas.registro_facturacion</field>
+            <field name="type">form</field>
+            <field name="name">registro_facturacion_form</field>
+        </record>
+        <record model="ir.ui.view" id="registro_facturacion_view_tree">
+            <field name="model">sigcoop_wizard_ventas.registro_facturacion</field>
+            <field name="type">tree</field>
+            <field name="name">registro_facturacion_tree</field>
+        </record>
+
+        <record id="act_registro_facturacion_form" model="ir.action.act_window">
+            <field name="name">Registro Facturacion</field>
+            <field name="res_model">sigcoop_wizard_ventas.registro_facturacion</field>
+            <field name="search_value"/>
+        </record>
+
+        <menuitem name="Registro de Facturacion" parent="sigcoop_menus.menu_procesos"
+             id="menu_reg_facturacion"
+             sequence="60" icon="tryton-list"
+             action="act_registro_facturacion_form"/>
+
+    </data>
+</tryton>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tryton>
+    <data>
+        <!-- Forms y trees -->
+        <record model="ir.ui.view" id="resumen_creacion_view_form">
+            <field name="model">sigcoop_wizard_ventas.resumen_creacion</field>
+            <field name="type">form</field>
+            <field name="name">resumen_creacion_form</field>
+        </record>
+        <record model="ir.ui.view" id="resumen_creacion_view_tree">
+            <field name="model">sigcoop_wizard_ventas.resumen_creacion</field>
+            <field name="type">tree</field>
+            <field name="name">resumen_creacion_tree</field>
+        </record>
+
+        <!-- act_window -->
+        <record id="act_resumen_creacion_form" model="ir.action.act_window">
+            <field name="name">Resumen de Creacion de Ventas</field>
+            <field name="res_model">sigcoop_wizard_ventas.resumen_creacion</field>
+            <field name="search_value"/>
+        </record>
+
+        <!-- Menus -->
+        <menuitem parent="product.menu_main_product" sequence="0" action="act_resumen_creacion_form" icon="tryton-list" id="menu_resumen_creacion_form"/>
+
+    </data>
+</tryton>

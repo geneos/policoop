@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<tryton>
+    <data>
+ 
+
+        <record model="ir.ui.view" id="crear_ventas_start_view_form">
+            <field name="model">wizard_ventas.crear_ventas.start</field>
+            <field name="type">form</field>
+            <field name="name">crear_ventas_start_view_form</field>
+        </record>
+        <record model="ir.ui.view" id="crear_ventas_exito_view_form">
+            <field name="model">wizard_ventas.crear_ventas.exito</field>
+            <field name="type">form</field>
+            <field name="name">crear_ventas_exito_view_form</field>
+        </record>
+        <record model="ir.action.wizard" id="wizard_crear_ventas">
+            <field name="name">Crear ventas desde consumos</field>
+            <field name="wiz_name">wizard_ventas.crear_ventas</field>
+        </record>
+ 
+        <menuitem parent="sigcoop_menus.menu_procesos" secuence="20"
+            action="wizard_crear_ventas" id="menu_wizard_crear_ventas"/>
+    </data>
+</tryton>

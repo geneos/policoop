@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<form string="Registro Venta" col="6">
+    <label name="periodo"/>
+    <field name="periodo"/>
+    <label name="fecha_vencimiento_1"/>
+    <field name="fecha_vencimiento_1"/>
+    <label name="fecha_vencimiento_2"/>
+    <field name="fecha_vencimiento_2"/>
+    <label name="ruta"/>
+    <field name="ruta"/>
+    <label name="fecha_emision_factura"/>
+    <field name="fecha_emision_factura"/>
+    <label name="numerocesp"/>
+    <field name="numerocesp"/>
+    <label name="consumos"/>
+    <field name="consumos" colspan="6"/>
+</form>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<form string="Cuenta Corriente Tarifa" col="4">
+    <label name="suministro"/>
+    <field name="suministro"/>
+    <label name="periodo_facturado"/>
+    <field name="periodo_facturado"/>
+    <newline/>
+    <label name="remanente"/>
+    <field name="remanente"/>
+</form>

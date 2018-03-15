@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<data>
+    <xpath expr="/form/notebook/page[@id='general']/field[@name='type']"
+        position="after">
+        <newline/>
+        <label name="aplica_ap"/>
+        <field name="aplica_ap"/>
+        <label name="aplica_iva"/>
+        <field name="aplica_iva"/>
+        <label name="aplica_iibb"/>
+        <field name="aplica_iibb"/>
+        <newline/>
+        <label name="tipo_cargo"/>
+        <field name="tipo_cargo"/>
+        <label name="tipo_producto"/>
+        <field name="tipo_producto"/>
+        <label name="calcular_por_dia"/>
+        <field name="calcular_por_dia"/>
+        <newline/>
+        <label name="suma_aportes"/>
+        <field name="suma_aportes"/>
+        <newline/>
+        <label name="forzar_unit_price"/>
+        <field name="forzar_unit_price"/>
+    </xpath>
+</data>

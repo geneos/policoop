@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<form string="Familiar" col="6">
+    <label name="producto_id"/>
+    <field name="producto_id"/>
+    <label name="concepto"/>
+    <field name="concepto"/>
+    <newline/>
+    <label name="cantidad_fija"/>
+    <field name="cantidad_fija"/>
+    <label name="cantidad"/>
+    <field name="cantidad"/>
+    <newline/>
+    <label name="tarifa_id"/>
+    <field name="tarifa_id"/>
+    <newline/>
+    <label name="servicio"/>
+    <field name="servicio"/>
+</form>

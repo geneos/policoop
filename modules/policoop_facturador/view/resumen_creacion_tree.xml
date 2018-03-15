@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<tree string="Resumen de Creacion">
+    <field name="id"/>
+    <field name="fecha_comienzo"/>
+    <field name="cantidad_ventas_creadas"/>
+    <field name="cantidad_facturas_creadas"/>
+    <field name="finalizado"/>
+</tree>

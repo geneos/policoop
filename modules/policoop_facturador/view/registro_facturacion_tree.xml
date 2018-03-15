@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tree string="Registro Facturacion">
+	<field name="suministro"/>
+	<field name="ruta"/>
+    <field name="periodo"/>
+    <field name="operador"/>
+    <field name="estado"/>
+    <field name="mensaje"/>
+</tree>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tryton>
+    <data>
+        <!-- Forms y trees -->
+        <record model="ir.ui.view" id="producto_consumo_view_form">
+            <field name="model">sigcoop_wizard_ventas.producto_consumo</field>
+            <field name="type">form</field>
+            <field name="name">producto_consumo_form</field>
+        </record>
+        <record model="ir.ui.view" id="producto_consumo_view_tree">
+            <field name="model">sigcoop_wizard_ventas.producto_consumo</field>
+            <field name="type">tree</field>
+            <field name="name">producto_consumo_tree</field>
+        </record>
+
+        <!-- act_window -->
+        <record id="act_producto_consumo_form" model="ir.action.act_window">
+            <field name="name">ProductoConsumo</field>
+            <field name="res_model">sigcoop_wizard_ventas.producto_consumo</field>
+            <field name="search_value"/>
+        </record>
+
+        <menuitem name="Productos por Consumo" parent="sigcoop_menus.menu_configuration_prod"
+             id="menu_prod_consumo"
+             sequence="0" icon="tryton-list"
+             action="act_producto_consumo_form"/>
+        <!-- Menus -->
+       <!-- <menuitem parent="product.menu_main_product" sequence="0" action="act_producto_consumo_form" icon="tryton-list" id="menu_producto_consumo_form"/> -->
+
+    </data>
+</tryton>

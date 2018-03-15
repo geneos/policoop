@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<form string="Crear ventas de consumos" col="4">
+    <label name="repetir_datos_ultima_fac"/>
+    <field name="repetir_datos_ultima_fac"/>
+    <label name="tipofac"/>
+    <field name="tipofac"/>
+    <newline/>
+    <label name="servicio"/>
+    <field name="servicio" widget="selection"/>
+    <label name="lista_precios"/>
+    <field name="lista_precios" widget="selection"/>
+    <label name="periodo"/>
+    <field name="periodo" widget="selection"/>
+    <newline/>
+    <label name="fecha_vencimiento_1"/>
+    <field name="fecha_vencimiento_1"/>
+    <label name="fecha_vencimiento_2"/>
+    <field name="fecha_vencimiento_2"/>
+    <newline/>
+    <label name="ruta"/>
+    <field name="ruta"/>
+    <label name="suministro"/>
+    <field name="suministro" widget="selection"/>
+    <newline/>
+    <label name="fecha_emision_factura"/>
+    <field name="fecha_emision_factura"/>
+    <label name="numerocesp"/>
+    <field name="numerocesp"/>
+    <newline/>
+    <label name="fecha_vencimiento_proxima_factura"/>
+    <field name="fecha_vencimiento_proxima_factura"/>
+    <newline/>
+    <label name="forzarfac"/>
+    <field name="forzarfac"/>
+    <newline/>
+    <label name="hijos_como_padres"/>
+    <field name="hijos_como_padres"/>
+    <newline/>
+    <label name="tarifas_previas" invisible="1"/>
+    <field name="tarifas_previas" invisible="1"/>
+    <field name="servicio_char" invisible="1"/>
+ 
+</form>

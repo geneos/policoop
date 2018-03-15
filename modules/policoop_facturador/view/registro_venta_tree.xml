@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<tree string="Registro Venta">
+    <field name="periodo"/>
+    <field name="fecha_vencimiento_1"/>
+    <field name="fecha_vencimiento_2"/>
+    <field name="ruta"/>
+    <field name="fecha_emision_factura"/>
+    <field name="numerocesp"/>
+</tree>

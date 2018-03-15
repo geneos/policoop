@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<form string="Registro Facturacion" col="2">
+    <label name="suministro"/>
+    <field name="suministro"/>
+    <label name="ruta"/>
+    <field name="ruta"/>
+    <label name="periodo"/>
+    <field name="periodo"/>
+    <label name="operador"/>
+    <field name="operador"/>
+    <label name="estado"/>
+    <field name="estado"/>
+    <label name="mensaje"/>
+    <field name="mensaje"/>
+</form>

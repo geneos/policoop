@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<form string="Registro Venta" col="6">
+    <label name="id"/>
+    <field name="id"/>
+    <label name="fecha_comienzo"/>
+    <field name="fecha_comienzo"/>
+    <label name="cantidad_ventas_creadas"/>
+    <field name="cantidad_ventas_creadas"/>
+    <label name="cantidad_facturas_creadas"/>
+    <field name="cantidad_facturas_creadas"/>
+    <label name="finalizado"/>
+    <field name="finalizado"/>
+</form>

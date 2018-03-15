@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!-- This file is part of Tryton.  The COPYRIGHT file at the top level of
+this repository contains the full copyright notices and license terms. -->
+<form string="Pagar Facturas" col="4">
+	<label name='servicio'/>
+	<field name='servicio'/>
+	<label name='periodo'/>
+	<field name='periodo'/>
+	<newline/>	
+	<label name='fecha_pago_factura'/>
+	<field name='fecha_pago_factura'/>	
+</form>
