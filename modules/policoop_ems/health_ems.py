@@ -34,21 +34,21 @@ from trytond.pool import Pool
 
 
 __all__ = [
-    'GnuHealthSequences','SupportRequest', 'AmbulanceSupport',
-    'AmbulanceHealthProfessional']
+    'PolicoopSequences','TransportRequest', 'AmbulanceTransport',
+    'TransportHealthProfessional']
 
-class GnuHealthSequences(ModelSingleton, ModelSQL, ModelView):
-    "Standard Sequences for GNU Health"
-    __name__ = "gnuhealth.sequences"
+class PolicoopSequences(ModelSingleton, ModelSQL, ModelView):
+    "Standard Sequences for Policoop"
+    __name__ = "policoop.sequences"
 
-    support_request_code_sequence = fields.Property(fields.Many2One('ir.sequence',
-        'Support Request Sequence', 
-        domain=[('code', '=', 'gnuhealth.support_request')],
+    transport_request_code_sequence = fields.Property(fields.Many2One('ir.sequence',
+        'Transport Request Sequence', 
+        domain=[('code', '=', 'policoop.transport_request')],
         required=True))
 
-class SupportRequest(ModelSQL, ModelView):
-    'Support Request Registration'
-    __name__ = 'gnuhealth.support_request'
+class TransportRequest(ModelSQL, ModelView):
+    'Transport Request Registration'
+    __name__ = 'policoop.transport_request'
     _rec_name = 'code'
 
     code = fields.Char('Code',help='Request Code', readonly=True)
@@ -110,7 +110,7 @@ class SupportRequest(ModelSQL, ModelView):
         ], 'Event type')
 
     ambulances = fields.One2Many(
-        'gnuhealth.ambulance.support', 'sr',
+        'policoop.ambulance.transport', 'sr',
         'Ambulances', help='Ambulances requested in this Support Request')
 
     request_extra_info = fields.Text('Details')
@@ -154,21 +154,21 @@ class SupportRequest(ModelSQL, ModelView):
     @classmethod
     def create(cls, vlist):
         Sequence = Pool().get('ir.sequence')
-        Config = Pool().get('gnuhealth.sequences')
+        Config = Pool().get('policoop.sequences')
 
         vlist = [x.copy() for x in vlist]
         for values in vlist:
             if not values.get('code'):
                 config = Config(1)
                 values['code'] = Sequence.get_id(
-                    config.support_request_code_sequence.id)
+                    config.transport_request_code_sequence.id)
 
-        return super(SupportRequest, cls).create(vlist)
+        return super(TransportRequest, cls).create(vlist)
 
 
     @classmethod
     def __setup__(cls):
-        super(SupportRequest, cls).__setup__()
+        super(TransportRequest, cls).__setup__()
         t = cls.__table__()
         cls._sql_constraints = [
             ('code_uniq', Unique(t,t.code), 
@@ -194,17 +194,17 @@ class SupportRequest(ModelSQL, ModelView):
             'state': 'closed'})
 
 
-class AmbulanceSupport(ModelSQL, ModelView):
-    'Ambulance associated to a Support Request'
-    __name__ = 'gnuhealth.ambulance.support'
+class AmbulanceTransport(ModelSQL, ModelView):
+    'Ambulance associated to a Transport Request'
+    __name__ = 'policoop.ambulance.transport'
 
-    sr = fields.Many2One('gnuhealth.support_request',
+    sr = fields.Many2One('policoop.transport_request',
         'SR', help="Support Request", required=True)
 
     ambulance = fields.Many2One('gnuhealth.ambulance','Ambulance',
         domain=[('state', '=', 'available')],)
     
-    healthprofs = fields.One2Many('gnuhealth.ambulance_hp','name',
+    healthprofs = fields.One2Many('policoop.transport_hp','name',
         'Health Professionals')
 
     state = fields.Selection([
@@ -226,7 +226,7 @@ class AmbulanceSupport(ModelSQL, ModelView):
 
     @classmethod
     def __setup__(cls):
-        super(AmbulanceSupport, cls).__setup__()
+        super(TransportSupport, cls).__setup__()
         cls._buttons.update({
             'available': {'invisible': Equal(Eval('state'), 'available')},
             'dispatched': {'invisible': Equal(Eval('state'), 'dispatched')},
@@ -296,28 +296,13 @@ class AmbulanceSupport(ModelSQL, ModelView):
         Ambulance.write(vehicle, {
             'state': status })
 
-        # Create a new current ambulance status on support request log
-        Activity = Pool().get('gnuhealth.support_request.log')
-        log = []
-        timestamp = datetime.now()
-        values = {
-            'sr': 'ambulance',
-            'action': 'ambulance',
-            'remarks': status,
-            'timestamp': timestamp,
-            }
-        values['sr'] = ambulances[0].sr
-        
-        log.append(values)
-        Activity.create(log)
 
+class TransportHealthProfessional(ModelSQL, ModelView):
+    'Transport Health Professionals'
+    __name__ = 'policoop.transport_hp'
 
-class AmbulanceHealthProfessional(ModelSQL, ModelView):
-    'Ambulance Health Professionals'
-    __name__ = 'gnuhealth.ambulance_hp'
-
-    name = fields.Many2One('gnuhealth.ambulance.support', 'SR')
+    name = fields.Many2One('policoop.ambulance.transport', 'SR')
 
     healthprof = fields.Many2One(
         'gnuhealth.healthprofessional', 'Health Prof',
-        help='Health Professional for this ambulance and support request')
+        help='Health Professional for this ambulance and transport request')

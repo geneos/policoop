@@ -16,20 +16,20 @@
 <!-- Health Support Request Registration -->
 
         <record model="ir.ui.view" id="gnuhealth_support_request_form">
-            <field name="model">gnuhealth.support_request</field>
+            <field name="model">policoop.transport_request</field>
             <field name="type">form</field>
             <field name="name">support_request_form</field>
         </record>
 
         <record model="ir.ui.view" id="gnuhealth_support_request_tree">
-            <field name="model">gnuhealth.support_request</field>
+            <field name="model">policoop.transport_request</field>
             <field name="type">tree</field>
             <field name="name">support_request_tree</field>
         </record>
 
         <record model="ir.action.act_window" id="gnuhealth_action_support_request">
             <field name="name">Support Center</field>
-            <field name="res_model">gnuhealth.support_request</field>
+            <field name="res_model">policoop.transport_request</field>
         </record>
 
         <record model="ir.action.act_window.view" id="act_support_request_list_view">
@@ -119,13 +119,13 @@
 <!-- Health Professionals involved in Ambulances in Support Request -->
 
         <record model="ir.ui.view" id="gnuhealth_ambulance_healthprofessional_form">
-            <field name="model">gnuhealth.ambulance_hp</field>
+            <field name="model">policoop.transport_hp</field>
             <field name="type">form</field>
             <field name="name">ambulance_healthprofessional_form</field>
         </record>
 
         <record model="ir.ui.view" id="gnuhealth_ambulance_healthprofessional_tree">
-            <field name="model">gnuhealth.ambulance_hp</field>
+            <field name="model">policoop.transport_hp</field>
             <field name="type">tree</field>
             <field name="name">ambulance_healthprofessional_tree</field>
         </record>
@@ -133,13 +133,13 @@
 <!-- Health Support Request Log -->
 
         <record model="ir.ui.view" id="gnuhealth_support_request_log_form">
-            <field name="model">gnuhealth.support_request.log</field>
+            <field name="model">policoop.transport_request.log</field>
             <field name="type">form</field>
             <field name="name">support_request_log_form</field>
         </record>
 
         <record model="ir.ui.view" id="gnuhealth_support_request_log_tree">
-            <field name="model">gnuhealth.support_request.log</field>
+            <field name="model">policoop.transport_request.log</field>
             <field name="type">tree</field>
             <field name="name">support_request_log_tree</field>
         </record>

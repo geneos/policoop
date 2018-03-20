@@ -25,10 +25,8 @@ from .health_ems import *
 
 def register():
     Pool.register(
-        GnuHealthSequences,
-        Ambulance,
-        SupportRequest,
-        AmbulanceSupport,
-        AmbulanceHealthProfessional,
-        SupportRequestLog,
+        PolicoopSequences,
+        TransportRequest,
+        AmbulanceTransport,
+        TransportHealthProfessional,
         module='health_ems', type_='model')
