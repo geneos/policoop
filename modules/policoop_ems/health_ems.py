@@ -65,12 +65,9 @@ class SupportRequest(ModelSQL, ModelView):
     request_date = fields.DateTime('Date', required=True,
         help="Date and time of the call for help")
 
-    return_date = fields.DateTime('Return date', required=False,
+    return_date = fields.DateTime('Return_date', required=False,
         help="Date and time of return")
     
-    operational_sector = fields.Many2One('gnuhealth.operational_sector',
-        'O. Sector',help="Operational Sector")
-
     latitude = fields.Numeric('Latidude', digits=(3, 14))
     longitude = fields.Numeric('Longitude', digits=(4, 14))
 
@@ -78,20 +75,6 @@ class SupportRequest(ModelSQL, ModelView):
     urladdr = fields.Char(
         'OSM Map',
         help="Maps the location on Open Street Map")
-
-    healthcenter = fields.Many2One('gnuhealth.institution','Calling Institution')
-
-    patient_sex = fields.Function(
-        fields.Char('Sex'),
-        'get_patient_sex')
-
-    patient_age = fields.Function(
-        fields.Char('Age'),
-        'get_patient_age')
-
-    complaint = fields.Function(
-        fields.Char('Chief Complaint'),
-        'get_patient_complaint')
 
     urgency = fields.Selection([
         (None, ''),
@@ -119,40 +102,12 @@ class SupportRequest(ModelSQL, ModelView):
     event_type = fields.Selection([
         (None, ''),
         ('event1', 'Acute Coronary Syndrome'),
-        ('event2', 'Acute pain'),
-        ('event3', 'Acute illness'),
-        ('event4', 'Allergic reaction'),
-        ('event5', 'Bullying, battering'),
-        ('event6', 'Gastrointestinal event'),
-        ('event7', 'Endocrine event (diabetes, adrenal crisis, ..)'),
-        ('event8', 'Choke'),
-        ('event9', 'Domestic violence'),
-        ('event10', 'Environmental event (weather, animals, ...)'),
-        ('event11', 'Sexual assault'),
-        ('event12', 'Drug intoxication'),
-        ('event13', 'Robbery, violent assault'),
-        ('event14', 'Respiratory distress'),
-        ('event15', 'Pregnancy related event'),
-        ('event16', 'Gas intoxication'),
-        ('event17', 'Food intoxication'),
-        ('event18', 'Neurological event (stroke, TIA, seizure, ...)'),
-        ('event19', 'Chronic illness'),
-        ('event20', 'Near drowning'),
-        ('event21', 'Eye, Ear and Nose event'),
-        ('event22', 'Fall'),
-        ('event23', 'Deceased person'),
-        ('event24', 'Psychiatric event'),
-        ('event25', 'Suicide attempt'),
-        ('event26', 'Fire'),
-        ('event27', 'Transportation accident'),
-        ('event28', 'Traumatic Injuries'),
-        ('event29', 'Explosion'),
-        ('event30', 'Other specified'),
+        ('event2', 'Birthday'),
+        ('event3', 'Sport Event'),
+        ('event4', 'Cultural Event'),
+        ('event5', 'Internación'),
+        ('event6', 'Alta'),
         ], 'Event type')
-
-    request_actions = fields.One2Many(
-        'gnuhealth.support_request.log', 'sr',
-        'Activities', help='Support request activity log')
 
     ambulances = fields.One2Many(
         'gnuhealth.ambulance.support', 'sr',
@@ -169,15 +124,6 @@ class SupportRequest(ModelSQL, ModelView):
     @staticmethod
     def default_request_date():
         return datetime.now()
-
-    
-    def get_patient_sex(self, name):
-        if self.patient:
-            return self.patient.gender
-
-    def get_patient_age(self, name):
-        if self.patient:
-            return self.patient.name.age
 
     @staticmethod
     def default_operator():

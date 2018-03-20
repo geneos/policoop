@@ -7,5 +7,4 @@
     <field name="patient"/>
     <field name="requestor"/>
     <field name="healthcenter"/>
-    <field name="operational_sector"/>
 </tree>
