@@ -248,7 +248,7 @@ class SupportRequest(ModelSQL, ModelView):
             'state': 'closed'})
 
 
-class AmbulanceSupport (ModelSQL, ModelView):
+class AmbulanceSupport(ModelSQL, ModelView):
     'Ambulance associated to a Support Request'
     __name__ = 'gnuhealth.ambulance.support'
 
