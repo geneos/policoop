@@ -4,18 +4,18 @@ this repository contains the full copyright notices and license terms. -->
 <tryton>
     <data>
         <record model="ir.ui.view" id="autorizarfe_start_view_form">
-            <field name="model">sigcoop_wizard_ventas.autorizarfe.start</field>
+            <field name="model">policoop_facturador.autorizarfe.start</field>
             <field name="type">form</field>
             <field name="name">autorizarfe_start_view_form</field>
         </record>
  
         <record model="ir.action.wizard" id="wizard_autorizarfe">
             <field name="name">Autorización de Comprobantes Electrónicos</field>
-            <field name="wiz_name">sigcoop_wizard_ventas.autorizarfe</field>
+            <field name="wiz_name">policoop_facturador.autorizarfe</field>
         </record>
 
 
-        <menuitem name="Solicitar CAE Fac.Electrónica" parent="sigcoop_menus.menu_procesos"
+        <menuitem name="Solicitar CAE Fac.Electrónica" parent="policoop_facturador.menu_procesos"
              id="menu_autorizar_fe"
              sequence="30" action="wizard_autorizarfe"/>
     </data>

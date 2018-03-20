@@ -9,20 +9,19 @@ from decimal import Decimal
 
 class AutorizarFeStart(ModelView):
     'Autorizar Fe Start'
-    __name__ = 'sigcoop_wizard_ventas.autorizarfe.start'
+    __name__ = 'policoop_facturador.autorizarfe.start'
     fecha_emision = fields.Date('Fecha Emision')
     pos = fields.Many2One('account.pos', 'Punto de Venta',
         required=True, domain=([('pos_type', '=', 'electronic')]))
-    errorfe = fields.Boolean('Incluir Facturas en Error')
 
  
 
 class AutorizarFe(Wizard):
     'Autorizar Fe'
-    __name__ = 'sigcoop_wizard_ventas.autorizarfe'
+    __name__ = 'policoop_facturador.autorizarfe'
 
-    start = StateView('sigcoop_wizard_ventas.autorizarfe.start',
-        'sigcoop_wizard_ventas.autorizarfe_start_view_form', [
+    start = StateView('policoop_facturador.autorizarfe.start',
+        'policoop_facturador.autorizarfe_start_view_form', [
             Button('Cancel', 'end', 'tryton-cancel'),
             Button('Autorizar Comprobantes', 'autorizar', 'tryton-ok', default=True),
             ])
@@ -39,11 +38,6 @@ class AutorizarFe(Wizard):
         pool = Pool()
         Invoices = pool.get('account.invoice')
         invoice = Invoices.search([('id','=', factura)])[0]
- 
-        #try:
-        #    invoice.post([invoice])
-        #except Exception, e:
-        #    pass
 
         invoice.post([invoice])
 
@@ -51,22 +45,7 @@ class AutorizarFe(Wizard):
 
 
 
-    def solictarcae(self):
-        """
-        Company = Pool().get('company.company')
-        company = Company(Transaction().context.get('company')).party.name
-        Pos = Pool().get('account.pos')
-        if company=="COOPERATIVA ELECTRICA DE SM" or company == "COOPERATIVA ELECTRICA DE SM " or company == "COOPERATIVA ELECTRICA Y SERVICIOS ANEXOS DE SAN MANUEL LTDA":
-            pos = Pos.search([('pos_type', '=', 'electronic'), ('number', '=', 8)])
-        elif company == "COOPERSIVE LTDA.":
-            pos = Pos.search([('pos_type', '=', 'electronic'), ('number', '=', 4)])
-        elif company == "Cooperativa Electrica Limitada Norberto de la Riestra":
-            pos = Pos.search([('pos_type', '=', 'electronic'), ('number', '=', 6)])
-        elif company == "COOPERATIVA LIMITADA DE CONSUMO POPULAR DE ELECTRICIDAD Y SERVICIOS ANEXOS DE BAHIA SAN BLAS":
-            pos = Pos.search([('pos_type', '=', 'electronic'), ('number', '=', 3)])
-        else:
-            self.raise_user_error('No esta definido el punto de venta electronico para la cooperativa actual.')
-        """
+    def solictarcae(self):      
 
         query = '''SELECT id from account_invoice
                     where state in ('draft','validated')
@@ -78,10 +57,7 @@ class AutorizarFe(Wizard):
 
         if self.start.fecha_emision:
             query += '''and invoice_date = \'%s\' ''' % (self.start.fecha_emision)
-
-        if not self.start.errorfe:
-            query += '''and (resultado_fe = false or resultado_fe is null) '''
-
+     
         cursor = Transaction().cursor
         cursor.execute(query)
         invoices = cursor.fetchall()
