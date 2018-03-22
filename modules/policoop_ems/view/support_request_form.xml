@@ -24,8 +24,6 @@
 
         <label name="code"/>
         <field name="code"/>
-        <label name="urgency"/>
-        <field name="urgency"/>
         <label name="state"/>
         <field name="state"/>
         <label name="event_type"/>

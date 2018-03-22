@@ -20,7 +20,7 @@
 ##############################################################################
 
 from trytond.pool import Pool
-from .health_ems import *
+from .policoop_ems import *
 
 
 def register():
@@ -29,4 +29,4 @@ def register():
         TransportRequest,
         AmbulanceTransport,
         TransportHealthProfessional,
-        module='health_ems', type_='model')
+        module='policoop_ems', type_='model')

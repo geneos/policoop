@@ -65,7 +65,7 @@ class TransportRequest(ModelSQL, ModelView):
     request_date = fields.DateTime('Date', required=True,
         help="Date and time of the call for help")
 
-    return_date = fields.DateTime('Return_date', required=False,
+    return_date = fields.DateTime('Return_date', required=True,
         help="Date and time of return")
     
     latitude = fields.Numeric('Latidude', digits=(3, 14))
@@ -75,14 +75,7 @@ class TransportRequest(ModelSQL, ModelView):
     urladdr = fields.Char(
         'OSM Map',
         help="Maps the location on Open Street Map")
-
-    urgency = fields.Selection([
-        (None, ''),
-        ('low', 'Low'),
-        ('urgent', 'Urgent'),
-        ('emergency', 'Emergency'),
-        ], 'Urgency', sort=False)
-       
+   
     place_occurrance = fields.Selection([
         (None, ''),
         ('home', 'Home'),
