@@ -213,94 +213,9 @@ class AmbulanceTransport(ModelSQL, ModelView):
     healthprofs = fields.One2Many('policoop.transport_hp','name',
         'Health Professionals')
 
-    state = fields.Selection([
-        (None, ''),
-        ('available', 'Available / At Station'),
-        ('dispatched', 'Dispatched'),
-        ('en_route', 'En Route'),
-        ('on_location', 'On Location'),
-        ('to_hospital', 'To Hospital'),
-        ('at_hospital', 'At Hospital'),
-        ('returning', 'Returning'),
-        ('out_of_service', 'Out of service'),
-        ], 'Status',sort=False, readonly=True, help="Vehicle status")
-
-    @staticmethod
-    def default_state():
-        return 'available'
-
-
     @classmethod
     def __setup__(cls):
         super(TransportSupport, cls).__setup__()
-        cls._buttons.update({
-            'available': {'invisible': Equal(Eval('state'), 'available')},
-            'dispatched': {'invisible': Equal(Eval('state'), 'dispatched')},
-            'en_route': {'invisible': Equal(Eval('state'), 'en_route')},
-            'on_location': {'invisible': Equal(Eval('state'), 'on_location')},
-            'to_hospital': {'invisible': Equal(Eval('state'), 'to_hospital')},
-            'at_hospital': {'invisible': Equal(Eval('state'), 'at_hospital')},
-            'returning': {'invisible': Equal(Eval('state'), 'returning')},
-            'out_of_service': {'invisible': Equal(Eval('state'),
-            'out_of_service')},
-            })
-
-
-    @classmethod
-    @ModelView.button
-    def available(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='available')
-
-    @classmethod
-    @ModelView.button
-    def dispatched(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='dispatched')
-
-    @classmethod
-    @ModelView.button
-    def en_route(cls, ambulances):
-         cls.update_ambulance_status(ambulances, status='en_route')
-
-    @classmethod
-    @ModelView.button
-    def on_location(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='on_location')
-
-    @classmethod
-    @ModelView.button
-    def to_hospital(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='to_hospital')
-
-    @classmethod
-    @ModelView.button
-    def at_hospital(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='at_hospital')
-
-    @classmethod
-    @ModelView.button
-    def returning(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='returning')
-
-    @classmethod
-    @ModelView.button
-    def out_of_service(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='out_of_service')
-
-
-    @classmethod
-    def update_ambulance_status(cls, ambulances, status):
-        # Update status on local support model for this ambulance
-        cls.write(ambulances, {
-            'state': status})
-            
-        # Write current status on ambulance model
-        Ambulance = Pool().get('gnuhealth.ambulance')
-        vehicle = []
-        
-        vehicle.append(ambulances[0].ambulance)
-        
-        Ambulance.write(vehicle, {
-            'state': status })
 
 
 class TransportHealthProfessional(ModelSQL, ModelView):
