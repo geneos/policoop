@@ -29,4 +29,5 @@ def register():
         TransportRequest,
         AmbulanceTransport,
         TransportHealthProfessional,
+        InventoryLine,
         module='policoop_ems', type_='model')
