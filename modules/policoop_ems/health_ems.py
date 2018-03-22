@@ -111,13 +111,13 @@ class TransportRequest(ModelSQL, ModelView):
         ('event2', 'Internación'),
         ], 'Tipo de Servicio')
 
-    escort = fields.Text("Acompañante", help="Acompañante / Descripción")
+    escort = fields.Text("Acompañante", help="Persona que acompaña al afectado en la ambulancia / Descripción o relación")
 
     wait = fields.Selection([
         (None, ''),
         ('event1', 'Si'),
         ('event2', 'No'),
-        ], '¿Con espera?')
+        ], '¿Con espera?', help="¿La ambulancia se queda esperando en el lugar?")
 
     ambulances = fields.One2Many(
         'policoop.ambulance.transport', 'sr',
