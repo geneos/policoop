@@ -101,12 +101,22 @@ class TransportRequest(ModelSQL, ModelView):
 
     event_type = fields.Selection([
         (None, ''),
-        ('event1', 'Acute Coronary Syndrome'),
-        ('event2', 'Birthday'),
-        ('event3', 'Sport Event'),
-        ('event4', 'Cultural Event'),
-        ('event5', 'Internación'),
-        ('event6', 'Alta'),
+        ('event1', 'Zonal'),
+        ('event2', 'Urbano'),
+        ], 'Event type')
+
+    service_type = fields.Selection([
+        (None, ''),
+        ('event1', 'Alta'),
+        ('event2', 'Internación'),
+        ], 'Event type')
+
+    escort = fields.Text("Acompañante", help="Acompañante / Descripción")
+
+    wait = fields.Selection([
+        (None, ''),
+        ('event1', 'Si'),
+        ('event2', 'No'),
         ], 'Event type')
 
     ambulances = fields.One2Many(
