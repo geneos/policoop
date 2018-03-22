@@ -109,7 +109,7 @@ class TransportRequest(ModelSQL, ModelView):
         (None, ''),
         ('event1', 'Alta'),
         ('event2', 'Internación'),
-        ], 'Event type')
+        ], 'Tipo de Servicio')
 
     escort = fields.Text("Acompañante", help="Acompañante / Descripción")
 
@@ -117,7 +117,7 @@ class TransportRequest(ModelSQL, ModelView):
         (None, ''),
         ('event1', 'Si'),
         ('event2', 'No'),
-        ], 'Event type')
+        ], '¿Con espera?')
 
     ambulances = fields.One2Many(
         'policoop.ambulance.transport', 'sr',
