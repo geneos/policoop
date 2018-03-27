@@ -5,8 +5,6 @@
         <field name="sr"/>
         <label name="ambulance"/>
         <field name="ambulance"/>
-        <label name="state"/>
-        <field name="state"/>
     </group>
     <newline/>
     <field colspan="4" name="healthprofs"/>

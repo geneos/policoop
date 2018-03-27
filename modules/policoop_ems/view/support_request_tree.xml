@@ -5,5 +5,4 @@
     <field name="state" expand="1"/>
     <field name="patient"/>
     <field name="requestor"/>
-    <field name="healthcenter"/>
 </tree>

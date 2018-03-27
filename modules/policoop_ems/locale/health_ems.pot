@@ -343,7 +343,7 @@ msgid "Type of vehicle"
 msgstr ""
 
 msgctxt "help:gnuhealth.ambulance.support,sr:"
-msgid "Support Request"
+msgid "Transport Request"
 msgstr ""
 
 msgctxt "help:gnuhealth.ambulance.support,state:"
@@ -407,7 +407,7 @@ msgid "Remarks for this item"
 msgstr ""
 
 msgctxt "help:policoop.transport_request.log,sr:"
-msgid "Support Request"
+msgid "Transport Request"
 msgstr ""
 
 msgctxt "help:policoop.transport_request.log,timestamp:"
@@ -438,31 +438,31 @@ msgctxt "model:ir.action,name:gnuhealth_action_ambulance"
 msgid "Ambulances"
 msgstr ""
 
-msgctxt "model:ir.action,name:gnuhealth_action_ambulance_support"
-msgid "Ambulance in Support Requests"
+msgctxt "model:ir.action,name:policoop_action_ambulance_support"
+msgid "Ambulance in Transport Requests"
 msgstr ""
 
-msgctxt "model:ir.action,name:gnuhealth_action_support_request"
-msgid "Support Center"
+msgctxt "model:ir.action,name:policoop_action_support_request"
+msgid "Transport Center"
 msgstr ""
 
-msgctxt "model:ir.sequence,name:seq_gnuhealth_support_request_code"
-msgid "Support Request"
+msgctxt "model:ir.sequence,name:seq_policoop_support_request_code"
+msgid "Transport Request"
 msgstr ""
 
-msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_support_request_code"
-msgid "Support Request"
+msgctxt "model:ir.sequence.type,name:seq_type_policoop_support_request_code"
+msgid "Transport Request"
 msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance"
 msgid "Ambulances"
 msgstr ""
 
-msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance_sr"
-msgid "Ambulance in Support Requests"
+msgctxt "model:ir.ui.menu,name:policoop_ambulance_sr"
+msgid "Ambulance in Transport Requests"
 msgstr ""
 
-msgctxt "model:ir.ui.menu,name:gnuhealth_support_request"
+msgctxt "model:ir.ui.menu,name:policoop_transport_request"
 msgid "Support Center"
 msgstr ""
 
