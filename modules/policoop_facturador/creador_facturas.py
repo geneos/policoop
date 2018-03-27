@@ -60,37 +60,10 @@ class CreadorFacturas(object):
 		en account_invoice_ar/invoice.py).
 		"""
 		Pos = Pool().get('account.pos')
-		pos = Pos.search([('pos_type', '=', 'electronic'), ('number', '=', 3)]) 
+		pos = Pos.search([('pos_type', '=', 'electronic'), ('number', '=', 1)]) 
 		return pos[0]
 		
-	
-	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-	'''RESUMENES  '''
-	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-	def get_resumen_creacion(self):
-		"""
-		Retornamos el resultado de lo creado por este creador
-		de ventas.
-		"""
-		return {
-		"cantidad_facturas_creadas" : self.cantidad_facturas_creadas
-		}
-
-	def actualizar_resumen_creacion(self, resumen_id):
-		"""
-		Actualizamos el resumen de creacion.
-		"""
-		resumen = Pool().get('sigcoop_wizard_ventas.resumen_creacion')(resumen_id)
-		resumen.cantidad_facturas_creadas += self.cantidad_facturas_creadas
-		resumen.save()
-
-	def actualizar_resumen_importacion(self, sale):
-		if sale:
-			self.cantidad_ventas_creadas += 1
-			self.cantidad_facturas_creadas += len(sale.invoices)
-
-	
+		
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	'''FUNCIONES QUE CREAN LINEAS'''
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
@@ -209,5 +182,5 @@ class CreadorFacturas(object):
 
 				self.actualizar_resumen_importacion(sale)
 
-		return self.get_resumen_creacion()
+		return True
 		

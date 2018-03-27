@@ -5,8 +5,5 @@ this repository contains the full copyright notices and license terms. -->
 	<label name="fecha_emision"/>
 	<field name="fecha_emision"/>
 	<label name="pos"/>
-	<field name="pos" widget="selection"/>
-	<newline/>
-	<label name="errorfe"/>
-	<field name="errorfe"/>
+	<field name="pos" widget="selection"/>	
 </form>
