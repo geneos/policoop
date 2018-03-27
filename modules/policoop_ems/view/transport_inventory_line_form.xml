@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<form col="4">
+    <label name="inventory"/>
+    <field name="inventory"/>
+    <newline/>
+    <label name="product"/>
+    <field name="product"/>
+    <label name="uom"/>
+    <field name="uom"/>
+    <newline/>
+    <label name="quantity"/>
+    <field name="quantity"/>
+    <field name="moves" colspan="4"/>
+</form>

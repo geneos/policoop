@@ -65,7 +65,7 @@ class TransportRequest(ModelSQL, ModelView):
     request_date = fields.DateTime('Date', required=True,
         help="Date and time of the call for help")
 
-    return_date = fields.DateTime('Return_date', required=False,
+    return_date = fields.DateTime('Return_date', required=True,
         help="Date and time of return")
     
     latitude = fields.Numeric('Latidude', digits=(3, 14))
@@ -75,14 +75,7 @@ class TransportRequest(ModelSQL, ModelView):
     urladdr = fields.Char(
         'OSM Map',
         help="Maps the location on Open Street Map")
-
-    urgency = fields.Selection([
-        (None, ''),
-        ('low', 'Low'),
-        ('urgent', 'Urgent'),
-        ('emergency', 'Emergency'),
-        ], 'Urgency', sort=False)
-       
+   
     place_occurrance = fields.Selection([
         (None, ''),
         ('home', 'Home'),
@@ -101,13 +94,23 @@ class TransportRequest(ModelSQL, ModelView):
 
     event_type = fields.Selection([
         (None, ''),
-        ('event1', 'Acute Coronary Syndrome'),
-        ('event2', 'Birthday'),
-        ('event3', 'Sport Event'),
-        ('event4', 'Cultural Event'),
-        ('event5', 'Internación'),
-        ('event6', 'Alta'),
+        ('event1', 'Zonal'),
+        ('event2', 'Urbano'),
         ], 'Event type')
+
+    service_type = fields.Selection([
+        (None, ''),
+        ('event1', 'Alta'),
+        ('event2', 'Internación'),
+        ], 'Tipo de Servicio')
+
+    escort = fields.Text("Acompañante", help="Persona que acompaña al afectado en la ambulancia / Descripción o relación")
+
+    wait = fields.Selection([
+        (None, ''),
+        ('event1', 'Si'),
+        ('event2', 'No'),
+        ], '¿Con espera?', help="¿La ambulancia se queda esperando en el lugar?")
 
     ambulances = fields.One2Many(
         'policoop.ambulance.transport', 'sr',
@@ -120,6 +123,9 @@ class TransportRequest(ModelSQL, ModelView):
         ('open', 'Open'),
         ('closed', 'Closed'),
         ], 'State', sort=False, readonly=True)
+
+    lines = fields.One2Many(
+        'policoop.transport.line', 'inventory', 'Lines')
  
     @staticmethod
     def default_request_date():
@@ -207,94 +213,9 @@ class AmbulanceTransport(ModelSQL, ModelView):
     healthprofs = fields.One2Many('policoop.transport_hp','name',
         'Health Professionals')
 
-    state = fields.Selection([
-        (None, ''),
-        ('available', 'Available / At Station'),
-        ('dispatched', 'Dispatched'),
-        ('en_route', 'En Route'),
-        ('on_location', 'On Location'),
-        ('to_hospital', 'To Hospital'),
-        ('at_hospital', 'At Hospital'),
-        ('returning', 'Returning'),
-        ('out_of_service', 'Out of service'),
-        ], 'Status',sort=False, readonly=True, help="Vehicle status")
-
-    @staticmethod
-    def default_state():
-        return 'available'
-
-
     @classmethod
     def __setup__(cls):
         super(TransportSupport, cls).__setup__()
-        cls._buttons.update({
-            'available': {'invisible': Equal(Eval('state'), 'available')},
-            'dispatched': {'invisible': Equal(Eval('state'), 'dispatched')},
-            'en_route': {'invisible': Equal(Eval('state'), 'en_route')},
-            'on_location': {'invisible': Equal(Eval('state'), 'on_location')},
-            'to_hospital': {'invisible': Equal(Eval('state'), 'to_hospital')},
-            'at_hospital': {'invisible': Equal(Eval('state'), 'at_hospital')},
-            'returning': {'invisible': Equal(Eval('state'), 'returning')},
-            'out_of_service': {'invisible': Equal(Eval('state'),
-            'out_of_service')},
-            })
-
-
-    @classmethod
-    @ModelView.button
-    def available(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='available')
-
-    @classmethod
-    @ModelView.button
-    def dispatched(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='dispatched')
-
-    @classmethod
-    @ModelView.button
-    def en_route(cls, ambulances):
-         cls.update_ambulance_status(ambulances, status='en_route')
-
-    @classmethod
-    @ModelView.button
-    def on_location(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='on_location')
-
-    @classmethod
-    @ModelView.button
-    def to_hospital(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='to_hospital')
-
-    @classmethod
-    @ModelView.button
-    def at_hospital(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='at_hospital')
-
-    @classmethod
-    @ModelView.button
-    def returning(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='returning')
-
-    @classmethod
-    @ModelView.button
-    def out_of_service(cls, ambulances):
-        cls.update_ambulance_status(ambulances, status='out_of_service')
-
-
-    @classmethod
-    def update_ambulance_status(cls, ambulances, status):
-        # Update status on local support model for this ambulance
-        cls.write(ambulances, {
-            'state': status})
-            
-        # Write current status on ambulance model
-        Ambulance = Pool().get('gnuhealth.ambulance')
-        vehicle = []
-        
-        vehicle.append(ambulances[0].ambulance)
-        
-        Ambulance.write(vehicle, {
-            'state': status })
 
 
 class TransportHealthProfessional(ModelSQL, ModelView):
@@ -306,3 +227,128 @@ class TransportHealthProfessional(ModelSQL, ModelView):
     healthprof = fields.Many2One(
         'gnuhealth.healthprofessional', 'Health Prof',
         help='Health Professional for this ambulance and transport request')
+
+
+class InventoryLine(ModelSQL, ModelView):
+    'Stock Inventory Line'
+    __name__ = 'policoop.transport.line'
+
+    product = fields.Many2One('product.product', 'Product', required=True,
+        domain=[
+            ('type', '=', 'goods'),
+            ('consumable', '=', False),
+            ])
+    uom = fields.Function(fields.Many2One('product.uom', 'UOM'), 'get_uom')
+    unit_digits = fields.Function(fields.Integer('Unit Digits'),
+            'get_unit_digits')
+    quantity = fields.Float('Quantity', required=True,
+        digits=(16, Eval('unit_digits', 2)),
+        states=_states, depends=['unit_digits'] + _depends)
+    moves = fields.One2Many('stock.move', 'origin', 'Moves', readonly=True)
+    
+    @classmethod
+    def __setup__(cls):
+        super(InventoryLine, cls).__setup__()
+        t = cls.__table__()
+        cls._sql_constraints += [
+            ('check_line_qty_pos', Check(t, t.quantity >= 0),
+                'Line quantity must be positive.'),
+            ]
+        cls._order.insert(0, ('product', 'ASC'))
+
+    @classmethod
+    def __register__(cls, module_name):
+        TableHandler = backend.get('TableHandler')
+        cursor = Transaction().connection.cursor()
+        pool = Pool()
+        Move = pool.get('stock.move')
+        sql_table = cls.__table__()
+        move_table = Move.__table__()
+
+        super(InventoryLine, cls).__register__(module_name)
+
+        table = TableHandler(cls, module_name)
+        # Migration from 2.8: Remove constraint inventory_product_uniq
+        table.drop_constraint('inventory_product_uniq')
+
+        # Migration from 3.0: use Move origin
+        if table.column_exist('move'):
+            cursor.execute(*sql_table.select(sql_table.id, sql_table.move,
+                    where=sql_table.move != Null))
+            for line_id, move_id in cursor.fetchall():
+                cursor.execute(*move_table.update(
+                        columns=[move_table.origin],
+                        values=['%s,%s' % (cls.__name__, line_id)],
+                        where=move_table.id == move_id))
+            table.drop_column('move')
+
+    @staticmethod
+    def default_unit_digits():
+        return 2
+
+    @fields.depends('product')
+    def on_change_product(self):
+        self.unit_digits = 2
+        if self.product:
+            self.uom = self.product.default_uom
+            self.unit_digits = self.product.default_uom.digits
+
+    def get_rec_name(self, name):
+        return self.product.rec_name
+
+    @classmethod
+    def search_rec_name(cls, name, clause):
+        return [('product',) + tuple(clause[1:])]
+
+    def get_uom(self, name):
+        return self.product.default_uom.id
+
+    def get_unit_digits(self, name):
+        return self.product.default_uom.digits
+
+    @property
+    def unique_key(self):
+        key = []
+        for fname in self.inventory.grouping():
+            value = getattr(self, fname)
+            if isinstance(value, Model):
+                value = value.id
+            key.append(value)
+        return tuple(key)
+
+    @classmethod
+    def cancel_move(cls, lines):
+        Move = Pool().get('stock.move')
+        moves = [m for l in lines for m in l.moves if l.moves]
+        Move.cancel(moves)
+        Move.delete(moves)
+
+    def get_move(self):
+        '''
+        Return Move instance for the inventory line
+        '''
+        pool = Pool()
+        Move = pool.get('stock.move')
+        Uom = pool.get('product.uom')
+
+        delta_qty = Uom.compute_qty(self.uom,
+            - self.quantity,
+            self.uom)
+        if delta_qty == 0.0:
+            return
+        from_location = self.inventory.location
+        to_location = self.inventory.lost_found
+        if delta_qty < 0:
+            (from_location, to_location, delta_qty) = \
+                (to_location, from_location, -delta_qty)
+
+        return Move(
+            from_location=from_location,
+            to_location=to_location,
+            quantity=delta_qty,
+            product=self.product,
+            uom=self.uom,
+            company=self.inventory.company,
+            effective_date=self.inventory.date,
+            origin=self,
+            )

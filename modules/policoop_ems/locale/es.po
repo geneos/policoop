@@ -158,7 +158,7 @@ msgctxt "field:policoop.transport_hp,write_uid:"
 msgid "Write User"
 msgstr ""
 
-msgctxt "field:policoop.sequences,support_request_code_sequence:"
+msgctxt "field:policoop.sequences,transport_request_code_sequence:"
 msgid "Support Request Sequence"
 msgstr ""
 

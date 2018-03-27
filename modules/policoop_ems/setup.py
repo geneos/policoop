@@ -46,22 +46,22 @@ for dep in info.get('depends', []):
 requires.append('trytond >= %s.%s, < %s.%s' %
     (major_version, minor_version, major_version, minor_version + 1))
 
-setup(name='trytond_health_ems',
+setup(name='trytond_policoop_ems',
     version=info.get('version', '0.0.1'),
-    description=info.get('description', 'GNU Health package for Ambulance and Emergency Management'),
+    description=info.get('description', 'Policoop package for Ambulance and Emergency Management'),
     long_description=read('README'),
     author='GNU Solidario',
     author_email='health@gnusolidario.org',
     url='http://health.gnu.org',
     download_url='http://ftp.gnu.org/gnu/health/',
-    package_dir={'trytond.modules.health_ems': '.'},
+    package_dir={'trytond.modules.policoop_ems': '.'},
     packages=[
-        'trytond.modules.health_ems',
-        'trytond.modules.health_ems.tests',
+        'trytond.modules.policoop_ems',
+        'trytond.modules.policoop_ems.tests',
         ],
 
     package_data={
-        'trytond.modules.health_ems': info.get('xml', []) \
+        'trytond.modules.policoop_ems': info.get('xml', []) \
             + info.get('translation', []) \
             + ['tryton.cfg', 'view/*.xml', 'doc/*.rst', 'locale/*.po',
                'report/*.odt', 'icons/*.svg'],
@@ -86,7 +86,7 @@ setup(name='trytond_health_ems',
     zip_safe=False,
     entry_points="""
     [trytond.modules]
-    health_ems = trytond.modules.health_ems
+    policoop_ems = trytond.modules.policoop_ems
     """,
     test_suite='tests',
     test_loader='trytond.test_loader:Loader',
