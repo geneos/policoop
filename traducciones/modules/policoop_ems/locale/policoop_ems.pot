@@ -6,6 +6,18 @@ msgctxt "error:policoop.transport_request:"
 msgid "This Request Code already exists"
 msgstr ""
 
+msgctxt "field:policoop.ambulance.transport,ambulance:"
+msgid "Ambulance"
+msgstr ""
+
+msgctxt "field:policoop.ambulance.transport,healthprofs:"
+msgid "Health Professionals"
+msgstr ""
+
+msgctxt "field:policoop.ambulance.transport,sr:"
+msgid "SR"
+msgstr ""
+
 msgctxt "field:policoop.transport_hp,create_date:"
 msgid "Create Date"
 msgstr ""
@@ -72,6 +84,10 @@ msgstr ""
 
 msgctxt "field:policoop.transport_request,evaluation:"
 msgid "Evaluation"
+msgstr ""
+
+msgctxt "field:policoop.transport_request,event:"
+msgid "Event"
 msgstr ""
 
 msgctxt "field:policoop.transport_request,event_specific:"
@@ -154,6 +170,10 @@ msgctxt "field:policoop.transport_request,state:"
 msgid "State"
 msgstr ""
 
+msgctxt "field:policoop.transport_request,service_type:"
+msgid "Service type"
+msgstr ""
+
 msgctxt "field:policoop.transport_request,urgency:"
 msgid "Urgency"
 msgstr ""
@@ -162,8 +182,8 @@ msgctxt "field:policoop.transport_request,urladdr:"
 msgid "OSM Map"
 msgstr ""
 
-msgctxt "field:policoop.transport_request.log,wait:"
-msgid "Espera"
+msgctxt "field:policoop.transport_request,wait:"
+msgid "Wait"
 msgstr ""
 
 msgctxt "field:policoop.transport_request,write_date:"
