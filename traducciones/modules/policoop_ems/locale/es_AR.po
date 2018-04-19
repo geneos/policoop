@@ -16,7 +16,7 @@ msgstr "Profesionales de salud"
 
 msgctxt "field:policoop.ambulance.transport,sr:"
 msgid "SR"
-msgstr "Pedido de traslado"
+msgstr "Traslado"
 
 msgctxt "field:policoop.transport_hp,create_date:"
 msgid "Create Date"
@@ -62,13 +62,17 @@ msgctxt "field:policoop.transport_request,ambulances:"
 msgid "Ambulances"
 msgstr "Ambulancias"
 
+msgctxt "field:policoop.transport_request,calendar:"
+msgid "Calendar"
+msgstr "Calendario"
+
 msgctxt "field:policoop.transport_request,code:"
 msgid "Code"
 msgstr "Código"
 
 msgctxt "field:policoop.transport_request,companion:"
-msgid "Acompañante"
-msgstr ""
+msgid "Companion"
+msgstr "Acompañante"
 
 msgctxt "field:policoop.transport_request,complaint:"
 msgid "Chief Complaint"
@@ -250,6 +254,14 @@ msgctxt "help:policoop.transport_request,code:"
 msgid "Request Code"
 msgstr ""
 
+msgctxt "help:policoop.transport_request,companion:"
+msgid "Relationship or description of the person accompanying the affected person"
+msgstr "Relación o descripción de la persona que acompaña a la persona afectada"
+
+msgctxt "help:policoop.transport_request,event:"
+msgid "Create an event with this request?"
+msgstr "¿Crear un evento con esta solicitud?"
+
 msgctxt "help:policoop.transport_request,evaluation:"
 msgid "Related Patient Evaluation"
 msgstr ""
@@ -290,32 +302,12 @@ msgctxt "help:policoop.transport_request,wait:"
 msgid "Does the ambulance have to wait on site until the event is over?"
 msgstr "¿La ambulancia tiene que esperar hasta que el evento termine?"
 
-msgctxt "help:policoop.transport_request.log,action:"
-msgid "Activity log"
-msgstr ""
-
-msgctxt "help:policoop.transport_request.log,remarks:"
-msgid "Remarks for this item"
-msgstr ""
-
-msgctxt "help:policoop.transport_request.log,sr:"
-msgid "Pedido de transporte"
-msgstr ""
-
-msgctxt "help:policoop.transport_request.log,timestamp:"
-msgid "Date and time of activity"
-msgstr ""
-
 msgctxt "model:policoop.transport_hp,name:"
 msgid "Ambulance Health Professionals"
 msgstr ""
 
 msgctxt "model:policoop.transport_request,name:"
 msgid "Support Request Registration"
-msgstr ""
-
-msgctxt "model:policoop.transport_request.log,name:"
-msgid "Ambulance associated to a Support Request"
 msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_ambulance"
@@ -329,6 +321,10 @@ msgstr "Pedidos de traslados"
 msgctxt "model:ir.action,name:policoop_action_support_request"
 msgid "Traslados"
 msgstr ""
+
+msgctxt "model:ir.ui.menu,name:request_place"
+msgid "Location"
+msgstr "Ubicación"
 
 msgctxt "model:ir.sequence,name:seq_policoop_support_request_code"
 msgid "Transport Request"
@@ -480,43 +476,43 @@ msgstr ""
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Commercial Area"
-msgstr ""
+msgstr "Area comercial"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Home"
-msgstr ""
+msgstr "Casa"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Institution"
-msgstr ""
+msgstr "Institución"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Public Building"
-msgstr ""
+msgstr "Edificio público"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Public transportation"
-msgstr ""
+msgstr "Transporte público"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Recreational Area"
-msgstr ""
+msgstr "Area recreacional"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "School"
-msgstr ""
+msgstr "Escuela"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Sports event"
-msgstr ""
+msgstr "Evento de deportes"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Street"
-msgstr ""
+msgstr "Calle"
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Unknown"
-msgstr ""
+msgstr "Desconocido"
 
 msgctxt "selection:policoop.transport_request,state:"
 msgid ""
@@ -524,11 +520,11 @@ msgstr ""
 
 msgctxt "selection:policoop.transport_request,state:"
 msgid "Closed"
-msgstr ""
+msgstr "Cerrado"
 
 msgctxt "selection:policoop.transport_request,state:"
 msgid "Open"
-msgstr ""
+msgstr "Abierto"
 
 msgctxt "selection:policoop.transport_request,urgency:"
 msgid ""
@@ -546,14 +542,26 @@ msgctxt "selection:policoop.transport_request,urgency:"
 msgid "Urgent"
 msgstr ""
 
-msgctxt "selection:policoop.transport_request.log,action:"
-msgid ""
-msgstr ""
+msgctxt "selection:policoop.transport_request,wait:"
+msgid "Yes"
+msgstr "Sí"
 
-msgctxt "selection:policoop.transport_request.log,action:"
-msgid "Ambulance"
-msgstr ""
+msgctxt "selection:policoop.transport_request,wait:"
+msgid "No"
+msgstr "No"
 
-msgctxt "selection:policoop.transport_request.log,action:"
-msgid "General"
-msgstr ""
+msgctxt "view:policoop.transport_request:"
+msgid "Location"
+msgstr "Ubicación"
+
+msgctxt "view:policoop.transport_request:"
+msgid "Address"
+msgstr "Dirección"
+
+msgctxt "view:policoop.transport_request:"
+msgid "Patient Demographics"
+msgstr "Demografía del paciente"
+
+msgctxt "view:policoop.transport_request:"
+msgid "Details"
+msgstr "Detalles"
