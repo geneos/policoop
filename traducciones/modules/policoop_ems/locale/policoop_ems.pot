@@ -62,6 +62,10 @@ msgctxt "field:policoop.transport_request,ambulances:"
 msgid "Ambulances"
 msgstr ""
 
+msgctxt "field:policoop.transport_request,calendar:"
+msgid "Calendar"
+msgstr ""
+
 msgctxt "field:policoop.transport_request,code:"
 msgid "Code"
 msgstr ""
@@ -258,6 +262,10 @@ msgctxt "help:policoop.transport_request,evaluation:"
 msgid "Related Patient Evaluation"
 msgstr ""
 
+msgctxt "help:policoop.transport_request,event:"
+msgid "Create an event with this request?"
+msgstr ""
+
 msgctxt "help:policoop.transport_request,operational_sector:"
 msgid "Operational Sector"
 msgstr ""
@@ -332,6 +340,10 @@ msgstr ""
 
 msgctxt "model:ir.action,name:policoop_action_support_request"
 msgid "Transport Center"
+msgstr ""
+
+msgctxt "model:ir.ui.menu,name:request_place"
+msgid "Location"
 msgstr ""
 
 msgctxt "model:ir.sequence,name:seq_policoop_support_request_code"
@@ -558,14 +570,18 @@ msgctxt "selection:policoop.transport_request,wait:"
 msgid "No"
 msgstr ""
 
-msgctxt "selection:policoop.transport_request.log,action:"
-msgid ""
+msgctxt "view:policoop.transport_request:"
+msgid "Location"
 msgstr ""
 
-msgctxt "selection:policoop.transport_request.log,action:"
-msgid "Ambulance"
+msgctxt "view:policoop.transport_request:"
+msgid "Address"
 msgstr ""
 
-msgctxt "selection:policoop.transport_request.log,action:"
-msgid "General"
+msgctxt "view:policoop.transport_request:"
+msgid "Patient Demographics"
+msgstr ""
+
+msgctxt "view:policoop.transport_request:"
+msgid "Details"
 msgstr ""
