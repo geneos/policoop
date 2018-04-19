@@ -531,6 +531,14 @@ msgid "Street"
 msgstr ""
 
 msgctxt "selection:policoop.transport_request,place_occurrance:"
+msgid "Urban Area"
+msgstr ""
+
+msgctxt "selection:policoop.transport_request,place_occurrance:"
+msgid "Rural Area"
+msgstr ""
+
+msgctxt "selection:policoop.transport_request,place_occurrance:"
 msgid "Unknown"
 msgstr ""
 
