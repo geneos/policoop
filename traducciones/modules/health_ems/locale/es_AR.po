@@ -1,14 +1,26 @@
-#
 msgid ""
-msgstr "Content-Type: text/plain; charset=utf-8\n"
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-10 14:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.13.0\n"
+"X-Pootle-Path: /es/GNUHEALTH/health_ems/locale/es.po\n"
+"X-Pootle-Revision: 32087\n"
 
 msgctxt "error:gnuhealth.ambulance:"
 msgid "This vehicle ID already exists"
-msgstr "El ID de este vehículo ya existe"
+msgstr "Este ID de veículo ya existe"
 
 msgctxt "error:gnuhealth.support_request:"
 msgid "This Request Code already exists"
-msgstr "El código de pedido ya existe"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,active:"
 msgid "Active"
@@ -16,15 +28,15 @@ msgstr "Activo"
 
 msgctxt "field:gnuhealth.ambulance,create_date:"
 msgid "Create Date"
-msgstr "Crear Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,create_uid:"
 msgid "Create User"
-msgstr "Crear Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,id:"
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,rec_name:"
 msgid "Name"
@@ -40,11 +52,11 @@ msgstr "Marca"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_function:"
 msgid "Function"
-msgstr "Funcionalidad"
+msgstr "Función"
 
 msgctxt "field:gnuhealth.ambulance,vehicle_identifier:"
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,vehicle_model:"
 msgid "Model"
@@ -68,11 +80,11 @@ msgstr "Tipo"
 
 msgctxt "field:gnuhealth.ambulance,write_date:"
 msgid "Write Date"
-msgstr "Guardar Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance,write_uid:"
 msgid "Write User"
-msgstr "Guardar Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,ambulance:"
 msgid "Ambulance"
@@ -80,19 +92,19 @@ msgstr "Ambulancia"
 
 msgctxt "field:gnuhealth.ambulance.support,create_date:"
 msgid "Create Date"
-msgstr "Crear Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,create_uid:"
 msgid "Create User"
-msgstr "Crear Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,healthprofs:"
 msgid "Health Professionals"
-msgstr "Profesional de Salud"
+msgstr "Profesionales de salud"
 
 msgctxt "field:gnuhealth.ambulance.support,id:"
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,rec_name:"
 msgid "Name"
@@ -100,7 +112,7 @@ msgstr "Nombre"
 
 msgctxt "field:gnuhealth.ambulance.support,sr:"
 msgid "SR"
-msgstr "SR"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,state:"
 msgid "Status"
@@ -108,31 +120,31 @@ msgstr "Estado"
 
 msgctxt "field:gnuhealth.ambulance.support,write_date:"
 msgid "Write Date"
-msgstr "Guardar Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance.support,write_uid:"
 msgid "Write User"
-msgstr "Guardar Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,create_date:"
 msgid "Create Date"
-msgstr "Crear Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,create_uid:"
 msgid "Create User"
-msgstr "Crear Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,healthprof:"
 msgid "Health Prof"
-msgstr "Prof Salud"
+msgstr "Profesional de salud"
 
 msgctxt "field:gnuhealth.ambulance_hp,id:"
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,name:"
 msgid "SR"
-msgstr "SR"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,rec_name:"
 msgid "Name"
@@ -140,15 +152,15 @@ msgstr "Nombre"
 
 msgctxt "field:gnuhealth.ambulance_hp,write_date:"
 msgid "Write Date"
-msgstr "Guardar Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.ambulance_hp,write_uid:"
 msgid "Write User"
-msgstr "Guardar Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.sequences,support_request_code_sequence:"
 msgid "Support Request Sequence"
-msgstr "Secuencia de Solicitud de Soporte"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,address:"
 msgid "Address"
@@ -156,7 +168,7 @@ msgstr "Dirección"
 
 msgctxt "field:gnuhealth.support_request,ambulances:"
 msgid "Ambulances"
-msgstr "Ambulancias"
+msgstr "Ambulancia"
 
 msgctxt "field:gnuhealth.support_request,code:"
 msgid "Code"
@@ -164,15 +176,15 @@ msgstr "Código"
 
 msgctxt "field:gnuhealth.support_request,complaint:"
 msgid "Chief Complaint"
-msgstr "Queja Principal"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,create_date:"
 msgid "Create Date"
-msgstr "Crear Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,create_uid:"
 msgid "Create User"
-msgstr "Crear Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,evaluation:"
 msgid "Evaluation"
@@ -184,15 +196,15 @@ msgstr "Incidente"
 
 msgctxt "field:gnuhealth.support_request,event_type:"
 msgid "Event type"
-msgstr "Tipo de Evento"
+msgstr "Tipo de evento"
 
 msgctxt "field:gnuhealth.support_request,healthcenter:"
 msgid "Calling Institution"
-msgstr "Institución llamadora"
+msgstr "Institución llamante"
 
 msgctxt "field:gnuhealth.support_request,id:"
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,latitude:"
 msgid "Latidude"
@@ -204,43 +216,43 @@ msgstr "Longitud"
 
 msgctxt "field:gnuhealth.support_request,multiple_casualties:"
 msgid "Multiple Casualties"
-msgstr "Múltiples bajas"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,operational_sector:"
 msgid "O. Sector"
-msgstr "Sector"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,operator:"
 msgid "Operator"
-msgstr "Operador"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,patient:"
 msgid "Patient"
-msgstr "Paciente"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,patient_age:"
 msgid "Age"
-msgstr "Edad"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,patient_sex:"
 msgid "Sex"
-msgstr "Sexo"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,place_occurrance:"
 msgid "Origin"
-msgstr "Origen"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,rec_name:"
 msgid "Name"
-msgstr "Nombre"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,request_actions:"
 msgid "Activities"
-msgstr "Actividades"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,request_date:"
 msgid "Date"
-msgstr "Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,request_extra_info:"
 msgid "Details"
@@ -248,47 +260,47 @@ msgstr ""
 
 msgctxt "field:gnuhealth.support_request,requestor:"
 msgid "Requestor"
-msgstr "Solicitante"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,state:"
 msgid "State"
-msgstr "Estado"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,urgency:"
 msgid "Urgency"
-msgstr "Urgencia"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,urladdr:"
 msgid "OSM Map"
-msgstr "Mapa OSM"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,write_date:"
 msgid "Write Date"
-msgstr "Guardar Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request,write_uid:"
 msgid "Write User"
-msgstr "Guardar Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,action:"
 msgid "Activity"
-msgstr "Actividad"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,create_date:"
 msgid "Create Date"
-msgstr "Crear Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,create_uid:"
 msgid "Create User"
-msgstr "Crear Usuario"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,id:"
 msgid "ID"
-msgstr "ID"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,rec_name:"
 msgid "Name"
-msgstr "Nombre"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,remarks:"
 msgid "Remarks"
@@ -296,43 +308,43 @@ msgstr "Observaciones"
 
 msgctxt "field:gnuhealth.support_request.log,sr:"
 msgid "SR"
-msgstr "SR"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,timestamp:"
 msgid "Time"
-msgstr "Tiempo"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,write_date:"
 msgid "Write Date"
-msgstr "Guardar Fecha"
+msgstr ""
 
 msgctxt "field:gnuhealth.support_request.log,write_uid:"
 msgid "Write User"
-msgstr "Guardar Usuario"
+msgstr ""
 
 msgctxt "help:gnuhealth.ambulance,state:"
 msgid "Vehicle status"
-msgstr "Estado del Vehículo"
+msgstr "Estado del veículo"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_brand:"
 msgid "Ambulance maker"
-msgstr "Fabricante de Ambulancia"
+msgstr "Marca"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_function:"
 msgid "Vehicle main functionality"
-msgstr "Funcional ppal del vehículo"
+msgstr "Funcionalidad principal"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_identifier:"
 msgid "Ambulance license number or other type of ID"
-msgstr "Patente de ambulancia u otro tipo de ID"
+msgstr "Licencia de la ambulancia o ID"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_model:"
 msgid "Ambulance model"
-msgstr "Modelo de ambulancia"
+msgstr "Modelo de la ambulancia"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_odometer:"
 msgid "Current odometer reading"
-msgstr "Lectural actual del odómetro"
+msgstr "Lectura actual del odómetro"
 
 msgctxt "help:gnuhealth.ambulance,vehicle_station:"
 msgid "Station / Base of the vehicle"
@@ -344,7 +356,7 @@ msgstr "Tipo de vehículo"
 
 msgctxt "help:gnuhealth.ambulance.support,sr:"
 msgid "Support Request"
-msgstr "Solicitud de Soporte"
+msgstr "Pedido de soporte"
 
 msgctxt "help:gnuhealth.ambulance.support,state:"
 msgid "Vehicle status"
@@ -352,67 +364,67 @@ msgstr "Estado del vehículo"
 
 msgctxt "help:gnuhealth.ambulance_hp,healthprof:"
 msgid "Health Professional for this ambulance and support request"
-msgstr "Profesional de salud para esta ambulancia y solicitud de soporte"
+msgstr "Profesional de la salud para esta ambulancia y para este pedido de soporte"
 
 msgctxt "help:gnuhealth.support_request,address:"
 msgid "Free text address / location"
-msgstr "Dirección / Ubicación"
+msgstr "Texto libre para direccion / ubicación"
 
 msgctxt "help:gnuhealth.support_request,ambulances:"
 msgid "Ambulances requested in this Support Request"
-msgstr "Ambilancias solicitadas en esta solicitud de soporte"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,code:"
 msgid "Request Code"
-msgstr "Código de solicitud"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,evaluation:"
 msgid "Related Patient Evaluation"
-msgstr "Evaluación de paciente relacionada"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,operational_sector:"
 msgid "Operational Sector"
-msgstr "Sector operacional"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,operator:"
 msgid "Operator who took the call / support request"
-msgstr "Operador que tomó la llama / Solicitud de soporte"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,place_occurrance:"
 msgid "Place of occurrance"
-msgstr "Lugar de ocurrencia"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,request_actions:"
 msgid "Support request activity log"
-msgstr "Registro de actividad de Solicitud de Soporte"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,request_date:"
 msgid "Date and time of the call for help"
-msgstr "Tiempo y Fecha del llamado de ayuda"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,requestor:"
 msgid "Related party (person)"
-msgstr "Tercero relacionado (persona)"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request,urladdr:"
 msgid "Maps the location on Open Street Map"
-msgstr "Ubicación en Open Street Map"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request.log,action:"
 msgid "Activity log"
-msgstr "Registro de Actividad"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request.log,remarks:"
 msgid "Remarks for this item"
-msgstr "Observaciones para este item"
+msgstr "Observaciones"
 
 msgctxt "help:gnuhealth.support_request.log,sr:"
 msgid "Support Request"
-msgstr "Solicitud de Soporte"
+msgstr ""
 
 msgctxt "help:gnuhealth.support_request.log,timestamp:"
 msgid "Date and time of activity"
-msgstr "Tiempo y fecha de actividad"
+msgstr ""
 
 msgctxt "model:gnuhealth.ambulance,name:"
 msgid "Ambulance"
@@ -420,19 +432,19 @@ msgstr "Ambulancia"
 
 msgctxt "model:gnuhealth.ambulance.support,name:"
 msgid "Ambulance associated to a Support Request"
-msgstr "Ambulancia asociada al Pedido de Soporte"
+msgstr ""
 
 msgctxt "model:gnuhealth.ambulance_hp,name:"
 msgid "Ambulance Health Professionals"
-msgstr "Prof de Salud de la Ambulancia"
+msgstr ""
 
 msgctxt "model:gnuhealth.support_request,name:"
 msgid "Support Request Registration"
-msgstr "Registro de Solicitud de Soporte"
+msgstr ""
 
 msgctxt "model:gnuhealth.support_request.log,name:"
 msgid "Ambulance associated to a Support Request"
-msgstr "Ambulancia asociada a la Solicitud de Soporte"
+msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_ambulance"
 msgid "Ambulances"
@@ -440,19 +452,19 @@ msgstr "Ambulancias"
 
 msgctxt "model:ir.action,name:gnuhealth_action_ambulance_support"
 msgid "Ambulance in Support Requests"
-msgstr "Ambulancia en Solicitud de Soporte"
+msgstr ""
 
 msgctxt "model:ir.action,name:gnuhealth_action_support_request"
 msgid "Support Center"
-msgstr "Centro de Soporte"
+msgstr ""
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_support_request_code"
 msgid "Support Request"
-msgstr "Solicitud de Soporte"
+msgstr ""
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_support_request_code"
 msgid "Support Request"
-msgstr "Solicitud de Soporte"
+msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance"
 msgid "Ambulances"
@@ -460,11 +472,11 @@ msgstr "Ambulancias"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_ambulance_sr"
 msgid "Ambulance in Support Requests"
-msgstr "Ambulancia en Solicitud de Soporte"
+msgstr ""
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_support_request"
 msgid "Support Center"
-msgstr "Centro de Soporte"
+msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid ""
@@ -472,11 +484,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "At Hospital"
-msgstr "En Hospital"
+msgstr "En hospital"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Available / At Station"
-msgstr "Disponible / En Estación"
+msgstr "Disponible / en estación"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Dispatched"
@@ -488,19 +500,19 @@ msgstr "En ruta"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "On Location"
-msgstr "En Destino"
+msgstr "En el lugar"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Out of service"
-msgstr "Fuera de Servicio"
+msgstr "Fuera de servicio"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "Returning"
-msgstr "Retorno"
+msgstr "Volviendo"
 
 msgctxt "selection:gnuhealth.ambulance,state:"
 msgid "To Hospital"
-msgstr "En Hospital"
+msgstr "En hospital"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid ""
@@ -508,7 +520,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid "Type A - Patient Transport"
-msgstr "Tipo A - Transporte de Pacientes"
+msgstr "Tipo A - Transporte de paciente"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid "Type B - Emergency"
@@ -516,7 +528,7 @@ msgstr "Tipo B - Emergencia"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_function:"
 msgid "Type C - Mobile ICU"
-msgstr "Tipo C - ICU Móvil"
+msgstr "Tipo C - UCI móvil"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid ""
@@ -524,7 +536,7 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Airplane"
-msgstr "Avión"
+msgstr "Aeroplano"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Bicycle"
@@ -552,7 +564,7 @@ msgstr "Motocicleta"
 
 msgctxt "selection:gnuhealth.ambulance,vehicle_type:"
 msgid "Van"
-msgstr "Van"
+msgstr "Furgoneta"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid ""
@@ -560,11 +572,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "At Hospital"
-msgstr "En Hospital"
+msgstr "En hospital"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Available / At Station"
-msgstr "Disponible / En Estación"
+msgstr "Disponible / en estación"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Dispatched"
@@ -572,23 +584,23 @@ msgstr "Despachado"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "En Route"
-msgstr "En Ruta"
+msgstr "En ruta"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "On Location"
-msgstr "En Destino"
+msgstr "En el lugar"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Out of service"
-msgstr "Fuera de Servicio"
+msgstr "Fuera de servicio"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "Returning"
-msgstr "Retornando"
+msgstr "Volviendo"
 
 msgctxt "selection:gnuhealth.ambulance.support,state:"
 msgid "To Hospital"
-msgstr "En Hospital"
+msgstr "En hospital"
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid ""
@@ -596,123 +608,123 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Acute Coronary Syndrome"
-msgstr "Síndrome Coronario Agudo"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Acute illness"
-msgstr "Enfermedad Aguda"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Acute pain"
-msgstr "Dolor Agudo"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Allergic reaction"
-msgstr "Reacción Alérgica"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Bullying, battering"
-msgstr "Bullying, Golpiza"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Choke"
-msgstr "Ahogo"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Chronic illness"
-msgstr "Enfermedad Crónica"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Deceased person"
-msgstr "Persona Fallecida"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Domestic violence"
-msgstr "Violencia Doméstica"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Drug intoxication"
-msgstr "Intoxicación por drogas"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Endocrine event (diabetes, adrenal crisis, ..)"
-msgstr "Evento endócrino (diabetes, crisis de adrenalina, ..)"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Environmental event (weather, animals, ...)"
-msgstr "Evento ambiental (clima, animales, ...)"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Explosion"
-msgstr "Explosión"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Eye, Ear and Nose event"
-msgstr "Evento de ojo, oído y nariz"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Fall"
-msgstr "Caída"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Fire"
-msgstr "Fuego"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Food intoxication"
-msgstr "Intoxicación por comida"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Gas intoxication"
-msgstr "Intoxicación por gas"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Gastrointestinal event"
-msgstr "Evento Gastrointestinal"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Near drowning"
-msgstr "Casi Ahogo"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Neurological event (stroke, TIA, seizure, ...)"
-msgstr "Evento neurológico (ACV, convulsiones, ...)"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Other specified"
-msgstr "Otro especificado"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Pregnancy related event"
-msgstr "Evento relacionado a Embarazo"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Psychiatric event"
-msgstr "Evento Psiquiátrico"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Respiratory distress"
-msgstr "Dificultad respiratoria"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Robbery, violent assault"
-msgstr "Robo, asalto violento"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Sexual assault"
-msgstr "Abuso sexual"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Suicide attempt"
-msgstr "Intento de Suicido"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Transportation accident"
-msgstr "Accidente de transporte"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,event_type:"
 msgid "Traumatic Injuries"
-msgstr "Heridas traumáticas"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid ""
@@ -720,43 +732,43 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Commercial Area"
-msgstr "Área comercial"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Home"
-msgstr "Hogar"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Institution"
-msgstr "Institución"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Public Building"
-msgstr "Edificio Público"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Public transportation"
-msgstr "Transporte público"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Recreational Area"
-msgstr "Área Recreacional"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "School"
-msgstr "Escuela"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Sports event"
-msgstr "Evento deportivo"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Street"
-msgstr "Calle"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,place_occurrance:"
 msgid "Unknown"
-msgstr "Desconocido"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid ""
@@ -764,11 +776,11 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid "Closed"
-msgstr "Cerrado"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,state:"
 msgid "Open"
-msgstr "Abierto"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid ""
@@ -776,15 +788,15 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Emergency"
-msgstr "Emergencia"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Low"
-msgstr "Bajo"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request,urgency:"
 msgid "Urgent"
-msgstr "Urgente"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid ""
@@ -792,8 +804,12 @@ msgstr ""
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "Ambulance"
-msgstr "Ambulancia"
+msgstr ""
 
 msgctxt "selection:gnuhealth.support_request.log,action:"
 msgid "General"
-msgstr "General"
+msgstr ""
+
+msgctxt "view:gnuhealth.ambulance:"
+msgid "Remarks"
+msgstr "Aclaraciones"
