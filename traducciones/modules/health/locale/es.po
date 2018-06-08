@@ -1,7 +1,7 @@
 # Anonymous Pootle User, 2016.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-06-08 16:21-0300\n"
+"PO-Revision-Date: 2018-06-08 16:34-0300\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language: es_ES\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -262,7 +262,7 @@ msgstr "Tipo"
 
 msgctxt "field:gnuhealth.appointment,checked_in_date:"
 msgid "Checked-in Time"
-msgstr ""
+msgstr "Horario de ingreso"
 
 msgctxt "field:gnuhealth.appointment,comments:"
 msgid "Comments"
@@ -2906,7 +2906,7 @@ msgstr "Vocabulario"
 
 msgctxt "field:gnuhealth.patient.evaluation,wait_time:"
 msgid "Patient wait time"
-msgstr ""
+msgstr "Tiempo de espera del paciente"
 
 msgctxt "field:gnuhealth.patient.evaluation,weight:"
 msgid "Weight"
@@ -4372,7 +4372,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,abdominal_circ:"
 msgid "Waist circumference in centimeters"
-msgstr ""
+msgstr "Circunferencia de la cintura en centímetros"
 
 msgctxt "help:gnuhealth.patient.evaluation,abstraction:"
 msgid ""
@@ -4480,7 +4480,7 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,head_circumference:"
 msgid "Head circumference in centimeters"
-msgstr ""
+msgstr "Circunferencia de la cintura en centímetros"
 
 msgctxt "help:gnuhealth.patient.evaluation,healthprof:"
 msgid ""
@@ -4495,11 +4495,11 @@ msgstr ""
 
 msgctxt "help:gnuhealth.patient.evaluation,height:"
 msgid "Height in centimeters"
-msgstr ""
+msgstr "Altura en centímetros"
 
 msgctxt "help:gnuhealth.patient.evaluation,hip:"
 msgid "Hip circumference in centimeters"
-msgstr ""
+msgstr "Circunferencia de la cadera en centímetros"
 
 msgctxt "help:gnuhealth.patient.evaluation,information_source:"
 msgid "Source ofInformation, eg : Self, relative, friend ..."
@@ -9213,7 +9213,7 @@ msgstr "Libre"
 msgctxt ""
 "model:ir.action.act_window.domain,name:act_gnuhealth_appointment_domain_noshow"
 msgid "No Shows"
-msgstr ""
+msgstr "No se presentó"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_appointment"
 msgid "Appointment"
@@ -11728,7 +11728,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Date"
-msgstr ""
+msgstr "Fecha"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Information"
@@ -11736,7 +11736,7 @@ msgstr "Información"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "No show"
-msgstr ""
+msgstr "No se presentó"
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Patient appointment"
@@ -11752,7 +11752,7 @@ msgstr ""
 
 msgctxt "view:gnuhealth.appointment:"
 msgid "Time"
-msgstr ""
+msgstr "Hora"
 
 msgctxt "view:gnuhealth.birth_certificate:"
 msgid "Birh Certificate"
@@ -12444,7 +12444,7 @@ msgstr "Dosis específica"
 
 msgctxt "view:gnuhealth.prescription.line:"
 msgid "Treatment time"
-msgstr ""
+msgstr "Tiempo de tratamiento"
 
 msgctxt "view:gnuhealth.prescription.order:"
 msgid "Create"
