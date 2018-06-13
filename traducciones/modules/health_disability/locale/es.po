@@ -496,7 +496,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient,protheses:"
 msgid "Protheses"
-msgstr ""
+msgstr "Prótesis"
 
 msgctxt "field:gnuhealth.patient,uxo:"
 msgid "UXO"
@@ -701,7 +701,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.patient.prothesis,prothesis:"
 msgid "Prothesis"
-msgstr ""
+msgstr "Prótesis"
 
 msgctxt "field:gnuhealth.patient.prothesis,rec_name:"
 msgid "Name"
@@ -717,7 +717,7 @@ msgstr ""
 
 msgctxt "field:product.product,is_prothesis:"
 msgid "Prothesis"
-msgstr ""
+msgstr "Prótesis"
 
 msgctxt "help:gnuhealth.activity.assessment,qualifier1:"
 msgid "Extent of the difficulty"
