@@ -17859,3 +17859,27 @@ msgstr "Paterno"
 msgctxt "selection:gnuhealth.patient.family.diseases,xory:"
 msgid "Sibling"
 msgstr "Hermano/a"
+
+msgctxt "view:gnuhealth.disease.gene:"
+msgid "Disease Genes"
+msgstr "Genes de la enfermedad"
+
+msgctxt "view:gnuhealth.disease.gene:"
+msgid "Medical Genetic Risks"
+msgstr "Riesgos Genéticos Médicos"
+
+msgctxt "view:gnuhealth.patient.family.diseases:"
+msgid "Genetic Family History"
+msgstr "Antecedentes familiares genéticos"
+
+msgctxt "view:gnuhealth.patient.family.diseases:"
+msgid "Patient Family History"
+msgstr "Historial familiar del paciente"
+
+msgctxt "view:gnuhealth.patient.genetic.risk:"
+msgid "Patient Genetic Risks"
+msgstr "Riesgos genéticos del paciente"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Genetics"
+msgstr "Genética"

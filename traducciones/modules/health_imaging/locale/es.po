@@ -18,11 +18,11 @@ msgstr "Código"
 
 msgctxt "field:gnuhealth.imaging.test,create_date:"
 msgid "Create Date"
-msgstr "Crear fecha"
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.imaging.test,create_uid:"
 msgid "Create User"
-msgstr "Crear usuario"
+msgstr "Creador"
 
 msgctxt "field:gnuhealth.imaging.test,id:"
 msgid "ID"
@@ -50,7 +50,7 @@ msgstr "Guardar fecha"
 
 msgctxt "field:gnuhealth.imaging.test,write_uid:"
 msgid "Write User"
-msgstr "Guardar usuario"
+msgstr "Usuario modificador"
 
 msgctxt "field:gnuhealth.imaging.test.request,comment:"
 msgid "Comment"
@@ -58,11 +58,11 @@ msgstr "Comentario"
 
 msgctxt "field:gnuhealth.imaging.test.request,create_date:"
 msgid "Create Date"
-msgstr "Crear fecha"
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.imaging.test.request,create_uid:"
 msgid "Create User"
-msgstr "Crear usuario"
+msgstr "Creador"
 
 msgctxt "field:gnuhealth.imaging.test.request,date:"
 msgid "Date"
@@ -102,11 +102,11 @@ msgstr "Urgente"
 
 msgctxt "field:gnuhealth.imaging.test.request,write_date:"
 msgid "Write Date"
-msgstr "Guardar fecha"
+msgstr "Fecha de modificación"
 
 msgctxt "field:gnuhealth.imaging.test.request,write_uid:"
 msgid "Write User"
-msgstr "Guardar usuario"
+msgstr "Usuario modificador"
 
 msgctxt "field:gnuhealth.imaging.test.result,comment:"
 msgid "Comment"
@@ -114,11 +114,11 @@ msgstr "Comentario"
 
 msgctxt "field:gnuhealth.imaging.test.result,create_date:"
 msgid "Create Date"
-msgstr "Crear fecha"
+msgstr "Fecha de creaciń"
 
 msgctxt "field:gnuhealth.imaging.test.result,create_uid:"
 msgid "Create User"
-msgstr "Crear usuario"
+msgstr "Creador"
 
 msgctxt "field:gnuhealth.imaging.test.result,date:"
 msgid "Date"
@@ -162,11 +162,11 @@ msgstr "Prueba"
 
 msgctxt "field:gnuhealth.imaging.test.result,write_date:"
 msgid "Write Date"
-msgstr "Grabar fecha"
+msgstr "Fecha de modificación"
 
 msgctxt "field:gnuhealth.imaging.test.result,write_uid:"
 msgid "Write User"
-msgstr "Grabar usuario"
+msgstr "Usuario modificador"
 
 msgctxt "field:gnuhealth.imaging.test.type,code:"
 msgid "Code"
@@ -174,11 +174,11 @@ msgstr "Código"
 
 msgctxt "field:gnuhealth.imaging.test.type,create_date:"
 msgid "Create Date"
-msgstr "Crear fecha"
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.imaging.test.type,create_uid:"
 msgid "Create User"
-msgstr "Crear usuario"
+msgstr "Creador"
 
 msgctxt "field:gnuhealth.imaging.test.type,id:"
 msgid "ID"

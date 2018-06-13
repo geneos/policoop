@@ -20,7 +20,7 @@ msgstr "Fecha fin \"%(end_date)s\" ANTES que fecha cirugía \"%(surgery_date)s\"
 
 msgctxt "error:gnuhealth.surgery:"
 msgid "Operating Room is not available"
-msgstr ""
+msgstr "El quirófano no está disponible"
 
 msgctxt "field:gnuhealth.operation,create_date:"
 msgid "Create Date"
@@ -132,7 +132,7 @@ msgstr "Usuario modificación"
 
 msgctxt "field:gnuhealth.sequences,surgery_code_sequence:"
 msgid "Surgery Sequence"
-msgstr ""
+msgstr "Secuencia Quirúrgica"
 
 msgctxt "field:gnuhealth.surgery,admission:"
 msgid "Admission"
@@ -180,7 +180,7 @@ msgstr "Información Adicional"
 
 msgctxt "field:gnuhealth.surgery,gender:"
 msgid "Gender"
-msgstr ""
+msgstr "Género"
 
 msgctxt "field:gnuhealth.surgery,id:"
 msgid "ID"
@@ -196,7 +196,7 @@ msgstr "Quirófano"
 
 msgctxt "field:gnuhealth.surgery,pathology:"
 msgid "Condition"
-msgstr ""
+msgstr "Condición"
 
 msgctxt "field:gnuhealth.surgery,patient:"
 msgid "Patient"
@@ -204,7 +204,7 @@ msgstr "Paciente"
 
 msgctxt "field:gnuhealth.surgery,postoperative_dx:"
 msgid "Post-op dx"
-msgstr ""
+msgstr "Diagnóstico postoperativo"
 
 msgctxt "field:gnuhealth.surgery,preop_antibiotics:"
 msgid "Antibiotic Prophylaxis"
@@ -264,7 +264,7 @@ msgstr "Estado"
 
 msgctxt "field:gnuhealth.surgery,supplies:"
 msgid "Supplies"
-msgstr ""
+msgstr "Suministros"
 
 msgctxt "field:gnuhealth.surgery,surgeon:"
 msgid "Surgeon"
@@ -284,7 +284,7 @@ msgstr "Duración"
 
 msgctxt "field:gnuhealth.surgery,surgery_team:"
 msgid "Team Members"
-msgstr ""
+msgstr "Miembros del equipo"
 
 msgctxt "field:gnuhealth.surgery,surgical_wound:"
 msgid "Surgical wound"
@@ -300,11 +300,11 @@ msgstr "Usuario modificación"
 
 msgctxt "field:gnuhealth.surgery_supply,create_date:"
 msgid "Create Date"
-msgstr ""
+msgstr "Fecha de creación"
 
 msgctxt "field:gnuhealth.surgery_supply,create_uid:"
 msgid "Create User"
-msgstr ""
+msgstr "Creador"
 
 msgctxt "field:gnuhealth.surgery_supply,id:"
 msgid "ID"
@@ -312,11 +312,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery_supply,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Cirugía"
 
 msgctxt "field:gnuhealth.surgery_supply,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgctxt "field:gnuhealth.surgery_supply,qty:"
 msgid "Qty"
@@ -324,11 +324,11 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery_supply,qty_used:"
 msgid "Used"
-msgstr ""
+msgstr "Usado"
 
 msgctxt "field:gnuhealth.surgery_supply,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.surgery_supply,supply:"
 msgid "Supply"
@@ -356,31 +356,31 @@ msgstr ""
 
 msgctxt "field:gnuhealth.surgery_team,name:"
 msgid "Surgery"
-msgstr ""
+msgstr "Cirugía"
 
 msgctxt "field:gnuhealth.surgery_team,notes:"
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgctxt "field:gnuhealth.surgery_team,rec_name:"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 msgctxt "field:gnuhealth.surgery_team,role:"
 msgid "Role"
-msgstr ""
+msgstr "Rol"
 
 msgctxt "field:gnuhealth.surgery_team,team_member:"
 msgid "Member"
-msgstr ""
+msgstr "Miembro"
 
 msgctxt "field:gnuhealth.surgery_team,write_date:"
 msgid "Write Date"
-msgstr ""
+msgstr "Fecha de modificación"
 
 msgctxt "field:gnuhealth.surgery_team,write_uid:"
 msgid "Write User"
-msgstr ""
+msgstr "Usuario modificador"
 
 msgctxt "help:gnuhealth.operation,procedure:"
 msgid "Procedure Code, for example ICD-10-PCS or ICPM"
@@ -450,7 +450,7 @@ msgstr "Nivel de urgencia para esta cirugía"
 
 msgctxt "help:gnuhealth.surgery,code:"
 msgid "Health Center code / sequence"
-msgstr ""
+msgstr "Código / secuencia del centro de salud"
 
 msgctxt "help:gnuhealth.surgery,computed_age:"
 msgid "Computed patient age at the moment of the surgery"
@@ -462,7 +462,7 @@ msgstr "Condición de base / Motivo"
 
 msgctxt "help:gnuhealth.surgery,postoperative_dx:"
 msgid "Post-operative diagnosis"
-msgstr ""
+msgstr "Diagnóstico postoperatorio"
 
 msgctxt "help:gnuhealth.surgery,preop_antibiotics:"
 msgid "Prophylactic antibiotic treatment within the last 60 minutes"
@@ -544,15 +544,15 @@ msgstr "Duración de la cirugía"
 
 msgctxt "help:gnuhealth.surgery,surgery_team:"
 msgid "Professionals Involved in the surgery"
-msgstr ""
+msgstr "Profesionales involucrados en la cirugía"
 
 msgctxt "help:gnuhealth.surgery_supply,qty:"
 msgid "Initial required quantity"
-msgstr ""
+msgstr "Cantidad a emplear inicial"
 
 msgctxt "help:gnuhealth.surgery_supply,qty_used:"
 msgid "Actual amount used"
-msgstr ""
+msgstr "Monto usado"
 
 msgctxt "help:gnuhealth.surgery_supply,supply:"
 msgid "Supply to be used in this surgery"
@@ -576,11 +576,11 @@ msgstr "Cirugía"
 
 msgctxt "model:gnuhealth.surgery_supply,name:"
 msgid "Supplies related to the surgery"
-msgstr ""
+msgstr "Suministros relacionados con la cirugía"
 
 msgctxt "model:gnuhealth.surgery_team,name:"
 msgid "Team Involved in the surgery"
-msgstr ""
+msgstr "Equipo involucrado en la cirugía"
 
 msgctxt "model:ir.action,name:act_rcri_form1"
 msgid "RCRI"
@@ -600,35 +600,35 @@ msgstr "Informe de cirugía"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_all"
 msgid "All"
-msgstr ""
+msgstr "Todo"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_confirmed"
 msgid "Confirmed"
-msgstr ""
+msgstr "Confirmado"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_done"
 msgid "Done"
-msgstr ""
+msgstr "Hecho"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_draft"
 msgid "Draft"
-msgstr ""
+msgstr "Borrador"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_in_progress"
 msgid "In Progress"
-msgstr ""
+msgstr "En progreso"
 
 msgctxt "model:ir.action.act_window.domain,name:act_surgery_domain_signed"
 msgid "Signed"
-msgstr ""
+msgstr "Firmado"
 
 msgctxt "model:ir.sequence,name:seq_gnuhealth_surgery_code"
 msgid "Surgery"
-msgstr ""
+msgstr "Cirugía"
 
 msgctxt "model:ir.sequence.type,name:seq_type_gnuhealth_surgery_code"
 msgid "Surgery"
-msgstr ""
+msgstr "Cirugía"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_surgery_menu"
 msgid "Surgeries"
@@ -803,3 +803,63 @@ msgstr ""
 msgctxt "selection:gnuhealth.surgery,surgical_wound:"
 msgid "Dirty-Infected . Class IV"
 msgstr ""
+
+msgctxt "view:gnuhealth.operation:"
+msgid "Operation"
+msgstr "Operación"
+
+msgctxt "view:gnuhealth.operation:"
+msgid "Procedure"
+msgstr "Procedimiento"
+
+msgctxt "view:gnuhealth.operation:"
+msgid "Procedure Details / Incidents"
+msgstr "Detalles del Procedimientos / Incidentes"
+
+msgctxt "view:gnuhealth.patient:"
+msgid "Surgeries"
+msgstr "Cirugías"
+
+msgctxt "view:gnuhealth.procedure:"
+msgid "Procedure"
+msgstr "Procedimientos"
+
+msgctxt "view:gnuhealth.rcri:"
+msgid "RCRI"
+msgstr "IRCR"
+
+msgctxt "view:gnuhealth.rcri:"
+msgid "RCRI : Revised Cardiac Risk Index"
+msgstr "IRCR: Índice de riesgo cardíaco revisado"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Anesthesia"
+msgstr "Anestesia"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Details / Incidents"
+msgstr "Detalles / Incidentes"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Finish and sign this surgery ? Itwill become read-only !"
+msgstr "¿Terminar y firmar esta cirugía? Se convertirá en de sólo lectura!"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Patient Surgical Risk assessment"
+msgstr "Evaluación del riesgo quirúrgico del paciente"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Preoperative checklist"
+msgstr "Lista de control preoperatorio"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Sign"
+msgstr "Firma"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Sign this surgery"
+msgstr "Firmar esta cirugía"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Surgery"
+msgstr "Cirugía"

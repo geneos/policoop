@@ -216,7 +216,7 @@ msgstr "Fecha modificación"
 
 msgctxt "field:gnuhealth.inpatient.diet,write_uid:"
 msgid "Write User"
-msgstr "Usuario modificación"
+msgstr "Usuario modificador"
 
 msgctxt "field:gnuhealth.inpatient.meal,create_date:"
 msgid "Create Date"
@@ -224,7 +224,7 @@ msgstr "Fecha creación"
 
 msgctxt "field:gnuhealth.inpatient.meal,create_uid:"
 msgid "Create User"
-msgstr "Usuario creación"
+msgstr "Creador"
 
 msgctxt "field:gnuhealth.inpatient.meal,diet_belief:"
 msgid "Belief"
@@ -256,11 +256,11 @@ msgstr "Nombre"
 
 msgctxt "field:gnuhealth.inpatient.meal,write_date:"
 msgid "Write Date"
-msgstr "Fecha modifiación"
+msgstr "Fecha de modificación"
 
 msgctxt "field:gnuhealth.inpatient.meal,write_uid:"
 msgid "Write User"
-msgstr "Usuario modificación"
+msgstr "Usuario modificador"
 
 msgctxt "field:gnuhealth.inpatient.meal.order,create_date:"
 msgid "Create Date"
@@ -680,7 +680,7 @@ msgstr "Hospitalizado"
 
 msgctxt "field:gnuhealth.patient.ecg,inpatient_registration_code:"
 msgid "Inpatient Registration"
-msgstr "Registro paciente"
+msgstr "Registro del paciente"
 
 msgctxt "field:gnuhealth.patient.evaluation,inpatient_registration_code:"
 msgid "IPC"
@@ -688,7 +688,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.sequences,inpatient_meal_order_sequence:"
 msgid "Inpatient Meal Sequence"
-msgstr "Secuencia comida paciente"
+msgstr "Secuencia de comidas para pacientes"
 
 msgctxt "field:gnuhealth.sequences,inpatient_registration_sequence:"
 msgid "Inpatient Sequence"
@@ -708,7 +708,7 @@ msgstr "Comida"
 
 msgctxt "help:gnuhealth.inpatient.meal.order,meal_warning:"
 msgid "The patient has special needs on meals"
-msgstr "EL paciente tiene comida especial"
+msgstr "El paciente tiene comida especial"
 
 msgctxt "help:gnuhealth.inpatient.meal.order,meal_warning_ack:"
 msgid "Check if you have verified the warnings on the patient meal items"
@@ -1264,7 +1264,7 @@ msgstr "Transferencia de cama"
 
 msgctxt "model:ir.action,name:act_evaluation_form1"
 msgid "Inpatient Evaluations"
-msgstr "Evaluaciones pacientes"
+msgstr "Evaluaciones del pacientes"
 
 msgctxt "model:ir.action,name:act_inpatient_evaluation"
 msgid "Inpatient Evaluation"
@@ -1272,11 +1272,11 @@ msgstr "Evaluación paciente"
 
 msgctxt "model:ir.action,name:gnuhealth_action_diet_therapeutic"
 msgid "Therapeutic diets"
-msgstr "Dieta terapéutica "
+msgstr "Dietas terapéuticas"
 
 msgctxt "model:ir.action,name:gnuhealth_action_inpatient_meal"
 msgid "Inpatient Meal"
-msgstr "Comida de paciente"
+msgstr "Comida del paciente"
 
 msgctxt "model:ir.action,name:gnuhealth_action_inpatient_meal_order"
 msgid "Meal Orders"
@@ -1318,7 +1318,7 @@ msgstr "Confirmado"
 
 msgctxt "model:ir.action.act_window.domain,name:act_registration_domain_done"
 msgid "To clean"
-msgstr "Para borrar"
+msgstr "A limpiar"
 
 msgctxt "model:ir.action.act_window.domain,name:act_registration_domain_draft"
 msgid "Cancelled"
@@ -1352,11 +1352,11 @@ msgstr "Registro de internación"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_diet_therapeutic"
 msgid "Therapeutic diets"
-msgstr "Dietas terapeuticas"
+msgstr "Dietas terapéuticas"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_inpatient_meal"
 msgid "Inpatient Meals"
-msgstr ""
+msgstr "Dieta de los pacientes"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_inpatient_meal_order"
 msgid "Meal Orders"
@@ -1504,7 +1504,7 @@ msgstr "Muerte"
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Home / Selfcare"
-msgstr "Se cuida a si mismo"
+msgstr "Se cuida a sí mismo"
 
 msgctxt "selection:gnuhealth.inpatient.registration,discharge_reason:"
 msgid "Left against medical advice"
@@ -1541,6 +1541,157 @@ msgstr "Libre"
 msgctxt "selection:gnuhealth.inpatient.registration,state:"
 msgid "hospitalized"
 msgstr "hospitalizado"
+
+msgctxt "view:gnuhealth.bed.transfer.init:"
+msgid "Patient Bed Transfer"
+msgstr "Transferencia de cama"
+
+msgctxt "view:gnuhealth.bed.transfer:"
+msgid "Bed Transfer History"
+msgstr "Historial de transferencia de cama"
+
+msgctxt "view:gnuhealth.diet.belief:"
+msgid "Diet Description"
+msgstr "Descripción de dieta"
+
+msgctxt "view:gnuhealth.diet.belief:"
+msgid "Diet related to beliefs"
+msgstr "Dietas relacionadas con creencias"
+
+msgctxt "view:gnuhealth.diet.belief:"
+msgid "Therapeutic Diet"
+msgstr "Dietas terapéuticas"
+
+msgctxt "view:gnuhealth.diet.therapeutic:"
+msgid "Diet Description and Indications"
+msgstr "Descripción e indicaciones de la dieta"
+
+msgctxt "view:gnuhealth.diet.therapeutic:"
+msgid "Therapeutic Diet"
+msgstr "Dieta terapéutica"
+
+msgctxt "view:gnuhealth.inpatient.diet:"
+msgid "Inpatient Diet"
+msgstr "Dieta de la hospitalización"
+
+msgctxt "view:gnuhealth.inpatient.medication.admin_time:"
+msgid "Inpatient Medication Admin Times"
+msgstr "Administración de los tiempos de la medicación"
+
+msgctxt "view:gnuhealth.inpatient.medication.log:"
+msgid "Inpatient Medication Log"
+msgstr "Registros de la medicación"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Admnistration"
+msgstr "Administración"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Adverse Reactions and Notes"
+msgstr "Reacciones adversas y notas"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Dosage"
+msgstr "Dosis"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Extra Info"
+msgstr "Información extra"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "General Info"
+msgstr "Información general"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Inpatient Medication"
+msgstr "Medicación de hospitalización"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Medication"
+msgstr "Medicación"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Status"
+msgstr "Estado"
+
+msgctxt "view:gnuhealth.inpatient.medication:"
+msgid "Treatment period"
+msgstr "Periodo de tratamiento"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Administrative data"
+msgstr "Datos administrativos"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Admission"
+msgstr "Admisión"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Admit the patient in the health institution and assign the bed"
+msgstr "Admisión del paciente en la institución de salud y asignación de la cama"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Cancel Registration"
+msgstr "Cancelar registración"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Cancel the patient registration process ?"
+msgstr "¿Cancelar el proceso de registración?"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Care Plan"
+msgstr "Plan de atención médica"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Confirm"
+msgstr "Confirmar"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Confirm Registration / Make the reservation"
+msgstr "Confirmar la registración / hacer la reservación"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Discharge"
+msgstr "Alta"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Discharge Patient"
+msgstr "Dar de alta"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Inpatient Registration Info"
+msgstr "Información de registración"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Inpatient Registration Information"
+msgstr "Información de registración"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Medication Plan"
+msgstr "Plan de medicación"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Nutrition"
+msgstr "Nutrición"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Other nutrition notes / directions"
+msgstr "Otras notas nutricionales / instrucciones"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid "Patient Admission"
+msgstr "Admisión del paciente"
+
+msgctxt "view:gnuhealth.inpatient.registration:"
+msgid ""
+"You are about to SIGN the discharge the patient from the health institution."
+" This record will become READ ONLY "
+msgstr "Usted está a punto de FIRMAR el alta del paciente de la institución de salud."
+" Este registro se convertirá en SÓLO LECTURA"
 
 msgctxt ""
 "wizard_button:gnuhealth.bed.transfer.create,start,create_bed_transfer:"

@@ -48,7 +48,7 @@ msgstr ""
 
 msgctxt "field:gnuhealth.diet.belief,name:"
 msgid "Belief"
-msgstr ""
+msgstr "Creencia"
 
 msgctxt "field:gnuhealth.diet.belief,rec_name:"
 msgid "Name"
@@ -252,7 +252,7 @@ msgstr "Actualmente en dieta"
 
 msgctxt "field:gnuhealth.patient,diet_belief:"
 msgid "Belief"
-msgstr ""
+msgstr "Creencia"
 
 msgctxt "field:gnuhealth.patient,diet_info:"
 msgid "Diet info"
@@ -1033,31 +1033,31 @@ msgstr "Uso de Drogas Recreacionales"
 
 msgctxt "model:gnuhealth.vegetarian_types,name:"
 msgid "Vegetarian Types"
-msgstr ""
+msgstr "Tipos de vegetarianos"
 
 msgctxt "model:gnuhealth.vegetarian_types,name:lacto"
 msgid "Lacto vegetarian"
-msgstr ""
+msgstr "Lacto vegetariano"
 
 msgctxt "model:gnuhealth.vegetarian_types,name:lactoovo"
 msgid "Lacto-ovo vegetarian"
-msgstr ""
+msgstr "Lacto-ovo vegetariano"
 
 msgctxt "model:gnuhealth.vegetarian_types,name:ovo"
 msgid "Ovo vegetarian"
-msgstr ""
+msgstr "Ovo vegetariano"
 
 msgctxt "model:gnuhealth.vegetarian_types,name:pescetarian"
 msgid "Pescetarian"
-msgstr ""
+msgstr "Pesetariano"
 
 msgctxt "model:gnuhealth.vegetarian_types,name:vegan"
 msgid "Vegan"
-msgstr ""
+msgstr "Vegano"
 
 msgctxt "model:ir.action,name:gnuhealth_action_diet_belief"
 msgid "Belief diets"
-msgstr ""
+msgstr "Dietas de creencias"
 
 msgctxt "model:ir.action,name:gnuhealth_action_drugs_recreational"
 msgid "Recreational Drugs"
@@ -1065,11 +1065,11 @@ msgstr "Drogas de ocio"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_diet_belief"
 msgid "Belief diets"
-msgstr ""
+msgstr "Dietas de creencias"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_diets"
 msgid "Diets"
-msgstr ""
+msgstr "Dietas"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_drugs_recreational"
 msgid "Recreational Drugs"
