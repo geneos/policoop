@@ -3652,6 +3652,14 @@ msgctxt "field:party.address,relative_id:"
 msgid "Contact"
 msgstr "Contacto"
 
+msgctxt "field:party.contact_mechanism,remarks:"
+msgid "Remarks"
+msgstr "Observaciones"
+
+msgctxt "field:party.contact_mechanism,emergency:"
+msgid "Emergency"
+msgstr "Emergencia"
+
 msgctxt "field:party.party,activation_date:"
 msgid "Activation date"
 msgstr "Fecha de activación"
@@ -3749,7 +3757,7 @@ msgid "Pharmacy"
 msgstr "Farmacia"
 
 msgctxt "field:party.party,lastname:"
-msgid "Family names"
+msgid "Family Names"
 msgstr "Apellidos"
 
 msgctxt "field:party.party,marital_status:"
