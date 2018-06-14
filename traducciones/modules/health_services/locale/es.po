@@ -152,7 +152,7 @@ msgstr "Usuario modificación"
 
 msgctxt "field:gnuhealth.prescription.order,service:"
 msgid "Service"
-msgstr ""
+msgstr "Servicio"
 
 msgctxt "field:gnuhealth.sequences,health_service_sequence:"
 msgid "Health Service Sequence"
@@ -287,6 +287,14 @@ msgstr "Establecer como borrador"
 msgctxt "view:gnuhealth.health_service:"
 msgid "service "
 msgstr "servicio "
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Update Services"
+msgstr "Actualizar servicios"
+
+msgctxt "view:gnuhealth.prescription.order:"
+msgid "Update Service document with this prescription lines"
+msgstr "Actualizar el documento del servicio con estas líneas de receta"
 
 msgctxt "view:gnuhealth.service.invoice.init:"
 msgid "Create Invoices"
