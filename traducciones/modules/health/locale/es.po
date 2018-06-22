@@ -844,6 +844,10 @@ msgctxt "field:gnuhealth.du,address_municipality:"
 msgid "Municipality"
 msgstr "Municipio"
 
+msgctxt "field:gnuhealth.du,address_repr:"
+msgid "DU Address"
+msgstr "Dirección"
+
 msgctxt "field:gnuhealth.du,address_street:"
 msgid "Street"
 msgstr "Calle"

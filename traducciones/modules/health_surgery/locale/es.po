@@ -837,8 +837,16 @@ msgid "Anesthesia"
 msgstr "Anestesia"
 
 msgctxt "view:gnuhealth.surgery:"
+msgid "Details"
+msgstr "Detalles"
+
+msgctxt "view:gnuhealth.surgery:"
 msgid "Details / Incidents"
 msgstr "Detalles / Incidentes"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Main Procedure"
+msgstr "Proceso principal"
 
 msgctxt "view:gnuhealth.surgery:"
 msgid "Finish and sign this surgery ? Itwill become read-only !"
@@ -855,6 +863,10 @@ msgstr "Lista de control preoperatorio"
 msgctxt "view:gnuhealth.surgery:"
 msgid "Sign"
 msgstr "Firma"
+
+msgctxt "view:gnuhealth.surgery:"
+msgid "Confirm"
+msgstr "Confirmar"
 
 msgctxt "view:gnuhealth.surgery:"
 msgid "Sign this surgery"
