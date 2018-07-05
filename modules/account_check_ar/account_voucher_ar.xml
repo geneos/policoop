@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- This file is part of the account_check_ar module for Tryton.
+The COPYRIGHT file at the top level of this repository contains
+the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <record model="ir.ui.view" id="view_voucher_check_form">
+            <field name="model">account.voucher</field>
+            <field name="inherit" ref="account_voucher_ar.account_voucher_form"/>
+            <field name="name">voucher_check_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="issued_check_view_tree">
+            <field name="model">account.issued.check</field>
+            <field name="type">tree</field>
+            <field name="name">issued_check_tree</field>
+        </record>
+
+        <record model="ir.ui.view" id="third_pay_checks_view_tree">
+            <field name="model">account.third.check</field>
+            <field name="type">tree</field>
+            <field name="name">third_pay_checks_tree</field>
+        </record>
+
+        <record model="ir.ui.view" id="third_check_view_tree">
+            <field name="model">account.third.check</field>
+            <field name="type">tree</field>
+            <field name="name">third_check_tree</field>
+        </record>
+
+    </data>
+</tryton>

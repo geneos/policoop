@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<!-- This file is part of the account_check_ar module for Tryton.
+The COPYRIGHT file at the top level of this repository contains
+the full copyright notices and license terms. -->
+<tryton>
+    <data>
+
+        <!-- Treasury -->
+
+        <menuitem name="Treasury" parent="account.menu_account"
+            id="menu_treasury" sequence="22"/>
+
+        <!-- Issued Checks -->
+        <record model="ir.ui.view" id="account_issued_check_form">
+            <field name="model">account.issued.check</field>
+            <field name="type">form</field>
+            <field name="name">account_issued_check_form</field>
+        </record>
+        <record model="ir.ui.view" id="account_issued_check_tree">
+            <field name="model">account.issued.check</field>
+            <field name="type">tree</field>
+            <field name="name">account_issued_check_tree</field>
+        </record>
+        <record model="ir.action.act_window" id="act_issued_check_tree">
+            <field name="name">Issued Checks</field>
+            <field name="res_model">account.issued.check</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_issued_check_tree_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="account_issued_check_tree"/>
+            <field name="act_window" ref="act_issued_check_tree"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_issued_check_tree_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="account_issued_check_form"/>
+            <field name="act_window" ref="act_issued_check_tree"/>
+        </record>
+        <menuitem parent="menu_treasury" action="act_issued_check_tree"
+            id="menu_issued_check" sequence="5"/>
+
+        <!-- Third Checks -->
+        <record model="ir.ui.view" id="account_third_check_form">
+            <field name="model">account.third.check</field>
+            <field name="type">form</field>
+            <field name="name">account_third_check_form</field>
+        </record>
+        <record model="ir.ui.view" id="account_third_check_tree">
+            <field name="model">account.third.check</field>
+            <field name="type">tree</field>
+            <field name="name">account_third_check_tree</field>
+        </record>
+        <record model="ir.action.act_window" id="act_third_check_tree">
+            <field name="name">Third Checks</field>
+            <field name="res_model">account.third.check</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_third_check_tree_view1">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="account_third_check_tree"/>
+            <field name="act_window" ref="act_third_check_tree"/>
+        </record>
+        <record model="ir.action.act_window.view" id="act_third_check_tree_view2">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="account_third_check_form"/>
+            <field name="act_window" ref="act_third_check_tree"/>
+        </record>
+        <menuitem parent="menu_treasury" action="act_third_check_tree"
+            id="menu_third_check" sequence="10"/>
+
+        <!-- Wizard: Issued Check Debit -->
+        <record model="ir.action.wizard" id="wizard_issued_check_debit">
+            <field name="name">Check Debit</field>
+            <field name="wiz_name">account.issued.check.debit</field>
+            <field name="model">account.issued.check</field>
+        </record>
+        <record model="ir.ui.view" id="view_issued_check_debit">
+            <field name="model">account.issued.check.debit.start</field>
+            <field name="type">form</field>
+            <field name="name">issued_check_debit</field>
+        </record>
+        <record model="ir.action.keyword" id="issued_check_debit_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">account.issued.check,-1</field>
+            <field name="action" ref="wizard_issued_check_debit"/>
+        </record>
+
+        <!-- Wizard: Revert Issued Check Debit -->
+        <record model="ir.action.wizard" id="wizard_issued_check_revert_debit">
+            <field name="name">Revert Check Debit</field>
+            <field name="wiz_name">account.issued.check.revert_debit</field>
+            <field name="model">account.issued.check</field>
+        </record>
+        <record model="ir.ui.view" id="view_issued_check_revert_debit">
+            <field name="model">account.issued.check.revert_debit.start</field>
+            <field name="type">form</field>
+            <field name="name">issued_check_debit_revert</field>
+        </record>
+        <record model="ir.action.keyword" id="issued_check_revert_debit_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">account.issued.check,-1</field>
+            <field name="action" ref="wizard_issued_check_revert_debit"/>
+        </record>
+
+        <!-- Wizard: Third Check Held -->
+        <record model="ir.action.wizard" id="wizard_third_check_held">
+            <field name="name">Check Held</field>
+            <field name="wiz_name">account.third.check.held</field>
+            <field name="model">account.third.check</field>
+        </record>
+        <record model="ir.ui.view" id="view_third_check_held">
+            <field name="model">account.third.check.held.start</field>
+            <field name="type">form</field>
+            <field name="name">third_check_held</field>
+        </record>
+        <record model="ir.action.keyword" id="third_check_held_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">account.third.check,-1</field>
+            <field name="action" ref="wizard_third_check_held"/>
+        </record>
+
+        <!-- Wizard: Third Check Deposit -->
+        <record model="ir.action.wizard" id="wizard_third_check_deposit">
+            <field name="name">Check Deposit</field>
+            <field name="wiz_name">account.third.check.deposit</field>
+            <field name="model">account.third.check</field>
+        </record>
+        <record model="ir.ui.view" id="view_third_check_deposit">
+            <field name="model">account.third.check.deposit.start</field>
+            <field name="type">form</field>
+            <field name="name">third_check_deposit</field>
+        </record>
+        <record model="ir.action.keyword" id="third_check_deposit_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">account.third.check,-1</field>
+            <field name="action" ref="wizard_third_check_deposit"/>
+        </record>
+
+        <!-- Wizard: Revert Third Check Deposit -->
+        <record model="ir.action.wizard" id="wizard_third_check_revert_deposit">
+            <field name="name">Revert Check Deposit</field>
+            <field name="wiz_name">account.third.check.revert_deposit</field>
+            <field name="model">account.third.check</field>
+        </record>
+        <record model="ir.ui.view" id="view_third_check_revert_deposit">
+            <field name="model">account.third.check.revert_deposit.start</field>
+            <field name="type">form</field>
+            <field name="name">third_check_deposit_revert</field>
+        </record>
+        <record model="ir.action.keyword" id="third_check_revert_deposit_keyword">
+            <field name="keyword">form_action</field>
+            <field name="model">account.third.check,-1</field>
+            <field name="action" ref="wizard_third_check_revert_deposit"/>
+        </record>
+
+    </data>
+</tryton>

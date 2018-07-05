@@ -1,0 +1,581 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:account.issued.check.debit:"
+msgid "Check \"%s\" is not issued"
+msgstr "Cheque \"%s\" no está emitido"
+
+msgctxt "error:account.issued.check.debit:"
+msgid "You need to define a check account in the journal \"%s\""
+msgstr "Debe definir la cuenta del cheque en el diario \"%s\""
+
+msgctxt "error:account.issued.check.revert_debit:"
+msgid "Check \"%s\" is not debited"
+msgstr "Cheque \"%s\" no está debitado"
+
+msgctxt "error:account.issued.check.revert_debit:"
+msgid "You need to define a check account in the journal \"%s\""
+msgstr "Debe definir la cuenta del cheque en el diario \"%s\""
+
+msgctxt "error:account.issued.check:"
+msgid "You can not delete a check that is used!"
+msgstr "No puede eliminar un cheque usado"
+
+msgctxt "error:account.third.check.deposit:"
+msgid "Check \"%s\" is not in held"
+msgstr "Cheque \"%s\" no está en cartera"
+
+msgctxt "error:account.third.check.deposit:"
+msgid "You need to define a check account in the journal \"%s\""
+msgstr "Debe definir la cuenta del cheque en el diario \"%s\""
+
+msgctxt "error:account.third.check.held:"
+msgid "Check \"%s\" is not draft"
+msgstr "Cheque \"%s\" no está en borrador"
+
+msgctxt "error:account.third.check.held:"
+msgid "You need to define a check account in the journal \"%s\""
+msgstr "Debe definir la cuenta del cheque en el diario \"%s\""
+
+msgctxt "error:account.third.check.revert_deposit:"
+msgid "Check \"%s\" is not deposited"
+msgstr "Cheque \"%s\" no está depositado"
+
+msgctxt "error:account.third.check.revert_deposit:"
+msgid "You need to define a check account in the journal \"%s\""
+msgstr "Debe definir la cuenta del cheque en el diario \"%s\""
+
+msgctxt "error:account.third.check:"
+msgid "You can not delete a check that is used!"
+msgstr "No puede eliminar un cheque usado"
+
+msgctxt "error:account.voucher:"
+msgid "Check \"%s\" is not in draft state"
+msgstr "Cheque \"%s\" no está en estado borrador"
+
+msgctxt "error:account.voucher:"
+msgid "Issued check \"%s\" is not in Issued state"
+msgstr "El cheque emitido número \"%s\" no figura como \"Emitido\""
+
+msgctxt "error:account.voucher:"
+msgid "Third check \"%s\" is not in Delivered state"
+msgstr "El cheque de tercero número \"%s\" no figura como \"Entregado\""
+
+msgctxt "error:account.voucher:"
+msgid "Third check \"%s\" is not in Held state"
+msgstr "El cheque de tercero número \"%s\" no figura como \"En cartera\""
+
+msgctxt "error:account.voucher:"
+msgid "You need to define a check account in the journal \"%s\","
+msgstr "Debe definir la cuenta del cheque en el diario \"%s\","
+
+msgctxt "field:account.issued.check,amount:"
+msgid "Amount"
+msgstr "Importe"
+
+msgctxt "field:account.issued.check,bank_account:"
+msgid "Bank Account"
+msgstr "Cuenta Bancaria"
+
+msgctxt "field:account.issued.check,clearing:"
+msgid "Clearing"
+msgstr "Clearing"
+
+msgctxt "field:account.issued.check,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:account.issued.check,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:account.issued.check,date:"
+msgid "Date"
+msgstr "Fecha Cheque"
+
+msgctxt "field:account.issued.check,date_out:"
+msgid "Date Out"
+msgstr "Fecha Salida"
+
+msgctxt "field:account.issued.check,debit_date:"
+msgid "Debit Date"
+msgstr "Fecha Débito"
+
+msgctxt "field:account.issued.check,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.issued.check,name:"
+msgid "Number"
+msgstr "Número"
+
+msgctxt "field:account.issued.check,on_order:"
+msgid "On Order"
+msgstr "A la orden"
+
+msgctxt "field:account.issued.check,origin:"
+msgid "Origin"
+msgstr "Origen"
+
+msgctxt "field:account.issued.check,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:account.issued.check,receiving_party:"
+msgid "Receiving Party"
+msgstr "Recibe"
+
+msgctxt "field:account.issued.check,signatory:"
+msgid "Signatory"
+msgstr "Firma"
+
+msgctxt "field:account.issued.check,state:"
+msgid "State"
+msgstr "Estado"
+
+msgctxt "field:account.issued.check,voucher:"
+msgid "Voucher"
+msgstr "Comprobante"
+
+msgctxt "field:account.issued.check,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:account.issued.check,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:account.issued.check.debit.start,bank_account:"
+msgid "Bank Account"
+msgstr "Cuenta Bancaria"
+
+msgctxt "field:account.issued.check.debit.start,date:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "field:account.issued.check.debit.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.issued.check.revert_debit.start,date:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "field:account.issued.check.revert_debit.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.journal,issued_check_account:"
+msgid "Issued Check Account"
+msgstr "Cuenta Cheque Emitido"
+
+msgctxt "field:account.journal,third_check_account:"
+msgid "Third Check Account"
+msgstr "Cuenta Cheque Tercero"
+
+msgctxt "field:account.third.check,account_bank_out:"
+msgid "Bank Account"
+msgstr "Cuenta Bancaria"
+
+msgctxt "field:account.third.check,amount:"
+msgid "Amount"
+msgstr "Importe"
+
+msgctxt "field:account.third.check,bank:"
+msgid "Bank"
+msgstr "Banco"
+
+msgctxt "field:account.third.check,clearing:"
+msgid "Clearing"
+msgstr "Clearing"
+
+msgctxt "field:account.third.check,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:account.third.check,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:account.third.check,date:"
+msgid "Date"
+msgstr "Fecha Cheque"
+
+msgctxt "field:account.third.check,date_in:"
+msgid "Date In"
+msgstr "Fecha Ingreso"
+
+msgctxt "field:account.third.check,date_out:"
+msgid "Date Out"
+msgstr "Fecha Salida"
+
+msgctxt "field:account.third.check,debit_date:"
+msgid "Debit Date"
+msgstr "Fecha Débito"
+
+msgctxt "field:account.third.check,destiny_party:"
+msgid "Destiny Party"
+msgstr "Destino"
+
+msgctxt "field:account.third.check,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.third.check,name:"
+msgid "Number"
+msgstr "Número"
+
+msgctxt "field:account.third.check,not_to_order:"
+msgid "Not to order"
+msgstr "No a la orden"
+
+msgctxt "field:account.third.check,on_order:"
+msgid "On Order"
+msgstr "A la orden"
+
+msgctxt "field:account.third.check,origin:"
+msgid "Origin"
+msgstr "Origen"
+
+msgctxt "field:account.third.check,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:account.third.check,reject_debit_note:"
+msgid "Debit Note"
+msgstr "Nota de Débito"
+
+msgctxt "field:account.third.check,signatory:"
+msgid "Signatory"
+msgstr "Firma"
+
+msgctxt "field:account.third.check,source_party:"
+msgid "Source Party"
+msgstr "Origen"
+
+msgctxt "field:account.third.check,state:"
+msgid "State"
+msgstr "Estado"
+
+msgctxt "field:account.third.check,vat:"
+msgid "Vat"
+msgstr "CUIT"
+
+msgctxt "field:account.third.check,voucher_in:"
+msgid "Origin Voucher"
+msgstr "Comprobante origen"
+
+msgctxt "field:account.third.check,voucher_out:"
+msgid "Target Voucher"
+msgstr "Comprobante destino"
+
+msgctxt "field:account.third.check,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:account.third.check,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "field:account.third.check.deposit.start,bank_account:"
+msgid "Bank Account"
+msgstr "Cuenta Bancaria"
+
+msgctxt "field:account.third.check.deposit.start,date:"
+msgid "Date"
+msgstr "Fecha Cheque"
+
+msgctxt "field:account.third.check.deposit.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.third.check.held.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.third.check.held.start,journal:"
+msgid "Journal"
+msgstr "Diario"
+
+msgctxt "field:account.third.check.revert_deposit.start,date:"
+msgid "Date"
+msgstr "Fecha"
+
+msgctxt "field:account.third.check.revert_deposit.start,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.voucher,issued_check:"
+msgid "Issued Checks"
+msgstr "Cheques Emitidos"
+
+msgctxt "field:account.voucher,third_check:"
+msgid "Third Checks"
+msgstr "Cheques de Terceros"
+
+msgctxt "field:account.voucher,third_pay_checks:"
+msgid "Third Checks"
+msgstr "Cheques de Terceros"
+
+msgctxt "field:account.voucher-account.third.check,create_date:"
+msgid "Create Date"
+msgstr "Fecha creación"
+
+msgctxt "field:account.voucher-account.third.check,create_uid:"
+msgid "Create User"
+msgstr "Usuario creación"
+
+msgctxt "field:account.voucher-account.third.check,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:account.voucher-account.third.check,rec_name:"
+msgid "Name"
+msgstr "Nombre"
+
+msgctxt "field:account.voucher-account.third.check,third_check:"
+msgid "Third Check"
+msgstr "Cheque de Tercero"
+
+msgctxt "field:account.voucher-account.third.check,voucher:"
+msgid "Voucher"
+msgstr "Comprobante"
+
+msgctxt "field:account.voucher-account.third.check,write_date:"
+msgid "Write Date"
+msgstr "Fecha modificación"
+
+msgctxt "field:account.voucher-account.third.check,write_uid:"
+msgid "Write User"
+msgstr "Usuario modificación"
+
+msgctxt "model:account.issued.check,name:"
+msgid "Account Issued Check"
+msgstr "Cuenta de Cheque Emitido"
+
+msgctxt "model:account.issued.check.debit.start,name:"
+msgid "Issued Check Debit"
+msgstr "Debitar Cheque"
+
+msgctxt "model:account.issued.check.revert_debit.start,name:"
+msgid "Revert Issued Check Debit"
+msgstr "Revertir Débito de Cheque"
+
+msgctxt "model:account.third.check,name:"
+msgid "Account Third Check"
+msgstr "Cuenta de Cheque de Tercero"
+
+msgctxt "model:account.third.check.deposit.start,name:"
+msgid "Third Check Deposit"
+msgstr "Depositar Cheque de Tercero"
+
+msgctxt "model:account.third.check.held.start,name:"
+msgid "Third Check Held"
+msgstr "Cheque de Tercero a Cartera"
+
+msgctxt "model:account.third.check.revert_deposit.start,name:"
+msgid "Revert Third Check Deposit"
+msgstr "Revertir Depósito de Cheque"
+
+msgctxt "model:account.voucher-account.third.check,name:"
+msgid "Account Voucher - Account Third Check"
+msgstr "Comprobante contable - Cuenta de Cheque de Tercero"
+
+msgctxt "model:ir.action,name:act_issued_check_tree"
+msgid "Issued Checks"
+msgstr "Cheques Emitidos"
+
+msgctxt "model:ir.action,name:act_third_check_tree"
+msgid "Third Checks"
+msgstr "Cheques de Terceros"
+
+msgctxt "model:ir.action,name:wizard_issued_check_debit"
+msgid "Check Debit"
+msgstr "Debitar Cheque"
+
+msgctxt "model:ir.action,name:wizard_issued_check_revert_debit"
+msgid "Revert Check Debit"
+msgstr "Revertir Débito de Cheque"
+
+msgctxt "model:ir.action,name:wizard_third_check_deposit"
+msgid "Check Deposit"
+msgstr "Depositar Cheque de Tercero"
+
+msgctxt "model:ir.action,name:wizard_third_check_held"
+msgid "Check Held"
+msgstr "Cheque de Tercero a Cartera"
+
+msgctxt "model:ir.action,name:wizard_third_check_revert_deposit"
+msgid "Revert Check Deposit"
+msgstr "Revertir Depósito de Cheque"
+
+msgctxt "model:ir.ui.menu,name:menu_issued_check"
+msgid "Issued Checks"
+msgstr "Cheques Emitidos"
+
+msgctxt "model:ir.ui.menu,name:menu_third_check"
+msgid "Third Checks"
+msgstr "Cheques de Terceros"
+
+msgctxt "model:ir.ui.menu,name:menu_treasury"
+msgid "Treasury"
+msgstr "Tesorería"
+
+#, fuzzy
+msgctxt "selection:account.issued.check,clearing:"
+msgid ""
+msgstr "Observaciones de la partida"
+
+msgctxt "selection:account.issued.check,clearing:"
+msgid "24 hs"
+msgstr "24 hs"
+
+msgctxt "selection:account.issued.check,clearing:"
+msgid "48 hs"
+msgstr "48 hs"
+
+msgctxt "selection:account.issued.check,clearing:"
+msgid "72 hs"
+msgstr "72 hs"
+
+msgctxt "selection:account.issued.check,state:"
+msgid "Debited"
+msgstr "Debitado"
+
+msgctxt "selection:account.issued.check,state:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "selection:account.issued.check,state:"
+msgid "Issued"
+msgstr "Emitido"
+
+#, fuzzy
+msgctxt "selection:account.third.check,clearing:"
+msgid ""
+msgstr "Observaciones de la partida"
+
+msgctxt "selection:account.third.check,clearing:"
+msgid "24 hs"
+msgstr "24 hs"
+
+msgctxt "selection:account.third.check,clearing:"
+msgid "48 hs"
+msgstr "48 hs"
+
+msgctxt "selection:account.third.check,clearing:"
+msgid "72 hs"
+msgstr "72 hs"
+
+msgctxt "selection:account.third.check,state:"
+msgid "Delivered"
+msgstr "Entregado"
+
+msgctxt "selection:account.third.check,state:"
+msgid "Deposited"
+msgstr "Depositado"
+
+msgctxt "selection:account.third.check,state:"
+msgid "Draft"
+msgstr "Borrador"
+
+msgctxt "selection:account.third.check,state:"
+msgid "Held"
+msgstr "Cartera"
+
+msgctxt "selection:account.third.check,state:"
+msgid "Rejected"
+msgstr "Rechazado"
+
+msgctxt "view:account.issued.check.debit.start:"
+msgid "Check Debit"
+msgstr "Debitar Cheque"
+
+msgctxt "view:account.issued.check:"
+msgid "Extra Info"
+msgstr "Información adicional"
+
+msgctxt "view:account.issued.check:"
+msgid "Target"
+msgstr "Destino"
+
+msgctxt "view:account.journal:"
+msgid "Checks"
+msgstr "Cheques"
+
+msgctxt "view:account.third.check.deposit.start:"
+msgid "Check Deposit"
+msgstr "Depósito de Cheque"
+
+msgctxt "view:account.third.check.held.start:"
+msgid "Check Held"
+msgstr "Cheque en Cartera"
+
+msgctxt "view:account.third.check:"
+msgid "Extra Info"
+msgstr "Información Extra"
+
+msgctxt "view:account.third.check:"
+msgid "Origin"
+msgstr "Origen"
+
+msgctxt "view:account.third.check:"
+msgid "Target"
+msgstr "Destino"
+
+msgctxt "view:account.third.check:"
+msgid "_Deposit"
+msgstr "_Depositar"
+
+msgctxt "view:account.third.check:"
+msgid "_Held"
+msgstr "_Cartera"
+
+msgctxt "view:account.voucher-account.third.check:"
+msgid "Third Checks"
+msgstr "Cheques de Terceros"
+
+msgctxt "view:account.voucher:"
+msgid "Checks"
+msgstr "Cheques"
+
+msgctxt "wizard_button:account.issued.check.debit,start,debit:"
+msgid "Debit"
+msgstr "Debitar"
+
+msgctxt "wizard_button:account.issued.check.debit,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.issued.check.revert_debit,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.issued.check.revert_debit,start,revert:"
+msgid "Revert Debit"
+msgstr "Revertir Débito"
+
+msgctxt "wizard_button:account.third.check.deposit,start,deposit:"
+msgid "Deposit"
+msgstr "Depositar"
+
+msgctxt "wizard_button:account.third.check.deposit,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.third.check.held,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.third.check.held,start,held:"
+msgid "Held"
+msgstr "A Cartera"
+
+msgctxt "wizard_button:account.third.check.revert_deposit,start,end:"
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgctxt "wizard_button:account.third.check.revert_deposit,start,revert:"
+msgid "Revert Deposit"
+msgstr "Revertir Depósito"
