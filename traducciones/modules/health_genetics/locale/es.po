@@ -94,14 +94,6 @@ msgctxt "field:gnuhealth.gene.variant.phenotype,variant:"
 msgid "Variant"
 msgstr "Variante"
 
-msgctxt "field:gnuhealth.patient,family_history:"
-msgid "Family History"
-msgstr "Historia familiar"
-
-msgctxt "field:gnuhealth.patient,genetic_risks:"
-msgid "Genetic Information"
-msgstr "Información genética"
-
 msgctxt "field:gnuhealth.gene.variant,variant:"
 msgid "Variant"
 msgstr "Variante"
@@ -109,6 +101,10 @@ msgstr "Variante"
 msgctxt "field:gnuhealth.patient,family_history:"
 msgid "Family History"
 msgstr "Historial Familiar"
+
+msgctxt "field:gnuhealth.patient,genetic_risks:"
+msgid "Genetic Information"
+msgstr "Información genética"
 
 msgctxt "field:gnuhealth.patient,genetic_risks:"
 msgid "Genetic Risks"
@@ -17839,10 +17835,6 @@ msgstr "Enfermedades relacionadas con las proteínas"
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_disease_genes"
 msgid "Disease Genes"
 msgstr "Genes patológicos"
-
-msgctxt "model:ir.ui.menu,name:gnuhealth_conf_genetics"
-msgid "Genetics"
-msgstr "Genética"
 
 msgctxt "model:ir.ui.menu,name:gnuhealth_conf_gene_variant_phenotypes"
 msgid "Gene Variant Phenotypes"
